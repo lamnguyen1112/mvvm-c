@@ -56,17 +56,11 @@ public extension UIApplication {
     }
     
     static var keyWindowOrFirst: UIWindow? {
-    #if os(iOS)
         if #available(iOS 13.0, *) {
             return UIApplication.shared.windows.first
         } else {
             return UIApplication.shared.keyWindow ?? UIApplication.shared.windows.first
         }
-    #elseif os(OSX)
-        return UIApplication.shared.keyWindow ?? UIApplication.shared.windows.first
-    #else
-        return nil
-    #endif
     }
     
     static func switchRootViewController(to newRootViewController: UIViewController, animated: Bool = true, completion: ((Bool) -> Void)? = nil) {

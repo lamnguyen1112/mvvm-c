@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MainNavigation: AnyObject {
-    
+    func logout()
 }
 
 class MainViewModel: BaseViewModel {
@@ -17,5 +17,9 @@ class MainViewModel: BaseViewModel {
     
     init(navigation: MainNavigation) {
         self.navigation = navigation
+    }
+    
+    func logout() {
+        navigation.logout()
     }
 }

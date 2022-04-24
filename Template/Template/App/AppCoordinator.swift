@@ -46,5 +46,13 @@ class AppCoordinator: BaseCoordinator {
         
         // Remove view controller in navigation
         navigationController.viewControllers = []
+        isAuthenticate = true
+    }
+    
+    func logout() {
+        isAuthenticate = false
+        children.removeAll()
+
+        gotoAuth()
     }
 }

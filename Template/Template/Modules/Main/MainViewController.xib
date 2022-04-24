@@ -25,10 +25,20 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K93-2T-v5L">
+                    <rect key="frame" x="172" y="538.5" width="70" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                    <connections>
+                        <action selector="logoutAction" destination="-1" eventType="touchUpInside" id="SvU-sB-PeG"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="K93-2T-v5L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8IB-dd-H7c"/>
+                <constraint firstItem="K93-2T-v5L" firstAttribute="top" secondItem="lTc-BJ-HmN" secondAttribute="bottom" constant="80" id="8cZ-9Z-gyJ"/>
                 <constraint firstItem="lTc-BJ-HmN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="H0L-36-A2p"/>
                 <constraint firstItem="lTc-BJ-HmN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J4f-M7-LSF"/>
             </constraints>

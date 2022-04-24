@@ -18,7 +18,8 @@ class AuthCoordinator: BaseCoordinator {
         let loginViewModel = LoginViewModel.init(navigation: self)
         loginVC.viewModel = loginViewModel
         
-        navigationController.pushViewController(loginVC, animated: true)
+        navigationController.viewControllers = [loginVC]
+        UIApplication.switchRootViewController(to: navigationController)
     }
 }
 

@@ -20,5 +20,12 @@ class MainCoordinator: BaseCoordinator {
 
 
 extension MainCoordinator: MainNavigation {
+    func logout() {
+        guard let appCoordinator = parentCoordinator as? AppCoordinator else {
+            return
+        }
+        
+        appCoordinator.logout()
+    }
     
 }

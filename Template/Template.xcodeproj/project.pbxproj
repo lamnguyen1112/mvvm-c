@@ -29,6 +29,19 @@
 		DEB1B1B028153B7900699414 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1AE28153B7900699414 /* MainViewController.swift */; };
 		DEB1B1B128153B7900699414 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB1B1AF28153B7900699414 /* MainViewController.xib */; };
 		DEB1B1B328153BB000699414 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1B228153BB000699414 /* MainViewModel.swift */; };
+		DEB1B1B62815B15700699414 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1B52815B15700699414 /* R.generated.swift */; };
+		DEB1B1B82815B41300699414 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1B72815B41300699414 /* Date+Ex.swift */; };
+		DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1B92815B46800699414 /* UIColor+Ex.swift */; };
+		DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1BB2815B52D00699414 /* UITableView+Ex.swift */; };
+		DEB1B1BE2815B5A400699414 /* UIView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1BD2815B5A400699414 /* UIView+Ex.swift */; };
+		DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1BF2815B6EF00699414 /* DispatchQueue+Ex.swift */; };
+		DEB1B1C22815B75E00699414 /* UIDevice+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C12815B75E00699414 /* UIDevice+Ex.swift */; };
+		DEB1B1C42815B90200699414 /* UINavigation+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C32815B90200699414 /* UINavigation+Ex.swift */; };
+		DEB1B1C62815B97400699414 /* Collection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C52815B97400699414 /* Collection+Ex.swift */; };
+		DEB1B1C82815B9E100699414 /* String+Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C72815B9E100699414 /* String+Date+Ex.swift */; };
+		DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C92815BC7B00699414 /* String+Ex.swift */; };
+		DEB1B1CC2815BDFB00699414 /* UICollection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */; };
+		DEB1B1CE2815BF3100699414 /* Data+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1CD2815BF3100699414 /* Data+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +71,19 @@
 		DEB1B1AE28153B7900699414 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DEB1B1AF28153B7900699414 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		DEB1B1B228153BB000699414 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		DEB1B1B52815B15700699414 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		DEB1B1B72815B41300699414 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1B92815B46800699414 /* UIColor+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1BB2815B52D00699414 /* UITableView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1BD2815B5A400699414 /* UIView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1BF2815B6EF00699414 /* DispatchQueue+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1C12815B75E00699414 /* UIDevice+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1C32815B90200699414 /* UINavigation+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1C52815B97400699414 /* Collection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1C72815B9E100699414 /* String+Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1C92815BC7B00699414 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+Ex.swift"; sourceTree = "<group>"; };
+		DEB1B1CD2815BF3100699414 /* Data+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +169,9 @@
 		DE1836D82812F647002F8A35 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DE1836D32812F5ED002F8A35 /* Base */,
 				DEAE6BC52813156900C2B793 /* Extensions */,
 				DEAE6BB728130E9500C2B793 /* Constants */,
-				DE1836D32812F5ED002F8A35 /* Base */,
 				DE1836DE2812FDE4002F8A35 /* Utils */,
 				DE1836E3281300AD002F8A35 /* Custom */,
 			);
@@ -155,6 +181,7 @@
 		DE1836DB2812FB74002F8A35 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEB1B1B52815B15700699414 /* R.generated.swift */,
 				DE1836C82812F45D002F8A35 /* Assets.xcassets */,
 				DE1836CA2812F45D002F8A35 /* LaunchScreen.storyboard */,
 				DE1836CD2812F45D002F8A35 /* Info.plist */,
@@ -233,9 +260,21 @@
 		DEAE6BC52813156900C2B793 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				DEB1B1C12815B75E00699414 /* UIDevice+Ex.swift */,
+				DEB1B1BD2815B5A400699414 /* UIView+Ex.swift */,
+				DEB1B1BB2815B52D00699414 /* UITableView+Ex.swift */,
+				DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */,
 				DEAE6BC82813161C00C2B793 /* UIStoryBoard+Ex.swift */,
 				DEAE6BC62813157F00C2B793 /* UIViewController+Ex.swift */,
+				DEB1B1C32815B90200699414 /* UINavigation+Ex.swift */,
 				DEAE6BCA2813169E00C2B793 /* UIApplication+Ex.swift */,
+				DEB1B1B92815B46800699414 /* UIColor+Ex.swift */,
+				DEB1B1BF2815B6EF00699414 /* DispatchQueue+Ex.swift */,
+				DEB1B1B72815B41300699414 /* Date+Ex.swift */,
+				DEB1B1C52815B97400699414 /* Collection+Ex.swift */,
+				DEB1B1C72815B9E100699414 /* String+Date+Ex.swift */,
+				DEB1B1CD2815BF3100699414 /* Data+Ex.swift */,
+				DEB1B1C92815BC7B00699414 /* String+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +295,7 @@
 			buildConfigurationList = DE1836D02812F45D002F8A35 /* Build configuration list for PBXNativeTarget "Template" */;
 			buildPhases = (
 				AE0A89AB232B643579C1E06B /* [CP] Check Pods Manifest.lock */,
+				DEB1B1B42815B05F00699414 /* R.swift */,
 				DE1836B82812F45C002F8A35 /* Sources */,
 				DE1836B92812F45C002F8A35 /* Frameworks */,
 				DE1836BA2812F45C002F8A35 /* Resources */,
@@ -357,6 +397,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DEB1B1B42815B05F00699414 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Template/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Template/Resources/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,23 +424,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB1B1C62815B97400699414 /* Collection+Ex.swift in Sources */,
 				DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */,
+				DEB1B1BE2815B5A400699414 /* UIView+Ex.swift in Sources */,
 				DEAE6BC72813157F00C2B793 /* UIViewController+Ex.swift in Sources */,
+				DEB1B1CE2815BF3100699414 /* Data+Ex.swift in Sources */,
 				DEAE6BC42813126B00C2B793 /* Colors.swift in Sources */,
 				DE1836E02812FFF6002F8A35 /* SelfSizingTableView.swift in Sources */,
 				DE1836DA2812F6D1002F8A35 /* AppCoordinator.swift in Sources */,
 				DE1836E228130054002F8A35 /* SelfSizingCollectionView.swift in Sources */,
 				DE1836DD2812FD37002F8A35 /* BaseViewController.swift in Sources */,
+				DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */,
 				DEB1B1B028153B7900699414 /* MainViewController.swift in Sources */,
 				DEB1B1B328153BB000699414 /* MainViewModel.swift in Sources */,
+				DEB1B1C22815B75E00699414 /* UIDevice+Ex.swift in Sources */,
+				DEB1B1C82815B9E100699414 /* String+Date+Ex.swift in Sources */,
+				DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */,
 				DEAE6BC0281310E100C2B793 /* BaseViewModel.swift in Sources */,
 				DEB1B1AC2815366500699414 /* LoginViewModel.swift in Sources */,
+				DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */,
+				DEB1B1B62815B15700699414 /* R.generated.swift in Sources */,
+				DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */,
 				DEAE6BC92813161C00C2B793 /* UIStoryBoard+Ex.swift in Sources */,
 				DE1836C02812F45C002F8A35 /* AppDelegate.swift in Sources */,
 				DEAE6BC2281311ED00C2B793 /* MainCoordinator.swift in Sources */,
+				DEB1B1C42815B90200699414 /* UINavigation+Ex.swift in Sources */,
+				DEB1B1B82815B41300699414 /* Date+Ex.swift in Sources */,
 				DEAE6BBE281310B100C2B793 /* AuthCoordinator.swift in Sources */,
 				DE1836D72812F638002F8A35 /* Coordinator.swift in Sources */,
 				DEAE6BCB2813169E00C2B793 /* UIApplication+Ex.swift in Sources */,
+				DEB1B1CC2815BDFB00699414 /* UICollection+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
