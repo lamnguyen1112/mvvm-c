@@ -1,15 +1,35 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
+def common_pods
+  # Here are all the pods that will be used in both targets.
+  pod 'R.swift', '~> 6.1'
+  pod 'SwiftEntryKit', '~> 2.0'
+
+end
+
 target 'Template' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
   # Pods for Template
-  pod 'R.swift', '~> 6.1'
-  pod 'SwiftEntryKit', '~> 2.0'
+  common_pods
   
-  # Debug Toolkit
-  pod "DBDebugToolkit", :configurations => ['Debug']
+end
 
+target 'Template-Dev' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for Template
+  common_pods
+  pod "DBDebugToolkit"
+  
+end
+
+target 'Template-Staging' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  # Pods for Template
+  common_pods
+  pod "DBDebugToolkit"
+  
 end

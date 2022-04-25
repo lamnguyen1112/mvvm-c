@@ -1,0 +1,12 @@
+//
+//  Debug.xcconfig
+//  Template
+//
+//  Created by Lam Nguyen on 4/25/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+PRODUCT_NAME = Template (dev)
+PRODUCT_BUNDLE_IDENTIFIER = xyz.example.template.dev
+MARKETING_VERSION = 0.3
