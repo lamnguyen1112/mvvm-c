@@ -1,24 +1,28 @@
 PODS:
+  - DBDebugToolkit (0.6.0)
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
   - SwiftEntryKit (2.0.0)
 
 DEPENDENCIES:
+  - DBDebugToolkit
   - R.swift (~> 6.1)
   - SwiftEntryKit (~> 2.0)
 
 SPEC REPOS:
   trunk:
+    - DBDebugToolkit
     - R.swift
     - R.swift.Library
     - SwiftEntryKit
 
 SPEC CHECKSUMS:
+  DBDebugToolkit: 03eb3483da4daf03b853b83ade5a8da9c8b7aff4
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
 
-PODFILE CHECKSUM: 2eeec3bfa77b22f225e862cce8845ad2930ef563
+PODFILE CHECKSUM: 30ede7c4ad0c1fe750e54f8f5213faf888b92951
 
 COCOAPODS: 1.11.2

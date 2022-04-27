@@ -7,18 +7,10 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
-    
-    private var mainViewModel: MainViewModel {
-        return viewModel as! MainViewModel
-    }
+class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction private func logoutAction() {
-        mainViewModel.logout()
     }
 }

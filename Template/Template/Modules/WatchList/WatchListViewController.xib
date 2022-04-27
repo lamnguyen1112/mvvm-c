@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Template" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WatchListViewController" customModule="Template" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,30 +19,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTc-BJ-HmN">
-                    <rect key="frame" x="184" y="437.5" width="46" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxC-VV-eix">
+                    <rect key="frame" x="167" y="437.5" width="80" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K93-2T-v5L">
-                    <rect key="frame" x="172" y="538.5" width="70" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Logout"/>
-                    <connections>
-                        <action selector="logoutAction" destination="-1" eventType="touchUpInside" id="SvU-sB-PeG"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="K93-2T-v5L" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8IB-dd-H7c"/>
-                <constraint firstItem="K93-2T-v5L" firstAttribute="top" secondItem="lTc-BJ-HmN" secondAttribute="bottom" constant="80" id="8cZ-9Z-gyJ"/>
-                <constraint firstItem="lTc-BJ-HmN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="H0L-36-A2p"/>
-                <constraint firstItem="lTc-BJ-HmN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="J4f-M7-LSF"/>
+                <constraint firstItem="fxC-VV-eix" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="O1U-U6-Slk"/>
+                <constraint firstItem="fxC-VV-eix" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sxg-Pr-G29"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="139" y="94"/>
         </view>
     </objects>
     <resources>

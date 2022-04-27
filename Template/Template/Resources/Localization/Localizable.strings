@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Template
+
+  Created by Lam Nguyen on 4/27/22.
+  
+*/
+
+// Common
+"ok" = "Ok";
+"cancel" = "Cancel";
+
+// Login
+"login.title" = "Login";
+
+// Watch list
+"watchlist.title" = "Watch List";

@@ -16,10 +16,22 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setupUI()
     }
     
+}
+
+// MARK: - Action
+extension LoginViewController {
     @IBAction private func goHomeAction(_ sender: Any) {
         loginViewModel.gotoHome()
     }
-
 }
+
+// MARK: - Helper
+extension LoginViewController {
+    private func setupUI() {
+        title = R.string.localizable.loginTitle()
+    }
+}
+

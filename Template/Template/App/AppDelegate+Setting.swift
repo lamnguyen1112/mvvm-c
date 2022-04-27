@@ -6,13 +6,16 @@
 //
 
 import UIKit
-#if !(APPSTORE)
-//    import DBDebugToolkit
+#if DEBUG
+    import DBDebugToolkit
 #endif
 
 extension AppDelegate {
     
-    private func setupDebugToolKit() {
-        
+    func setupDebugToolKit() {
+#if DEBUG
+        let shakeTrigger = DBShakeTrigger()
+        DBDebugToolkit.setup(with: [shakeTrigger])
+#endif
     }
 }
