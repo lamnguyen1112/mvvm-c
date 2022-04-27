@@ -20,7 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-    
+}
+
+extension AppDelegate {
     private func setupAppCoordinator() {
         window = UIWindow(frame: UIScreen.main.bounds)
         
@@ -31,6 +33,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-    
 }
-

@@ -87,8 +87,6 @@
 		DE822B832816FBE3000DDF86 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		DE822B842816FBF7000DDF86 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		DE822B852816FC0A000DDF86 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		DE822BB628170326000DDF86 /* Template-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Template-Dev-Info.plist"; path = "/Users/lamnguyen/Desktop/NewTemplate/mvvm-c/Template/Template-Dev-Info.plist"; sourceTree = "<absolute>"; };
-		DE822BE728170336000DDF86 /* Template-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Template-Staging-Info.plist"; path = "/Users/lamnguyen/Desktop/NewTemplate/mvvm-c/Template/Template-Staging-Info.plist"; sourceTree = "<absolute>"; };
 		DEAE6BB92813108000C2B793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEAE6BBA2813108000C2B793 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DEAE6BBD281310B100C2B793 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -229,14 +227,13 @@
 		DE1836DB2812FB74002F8A35 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DE5191AE2819B15800C5260A /* Fonts */,
 				DE5191AC2819AA3D00C5260A /* Localization */,
 				DE822B822816FB2E000DDF86 /* Configures */,
 				DEB1B1B52815B15700699414 /* R.generated.swift */,
 				DE1836C82812F45D002F8A35 /* Assets.xcassets */,
 				DE1836CA2812F45D002F8A35 /* LaunchScreen.storyboard */,
 				DE1836CD2812F45D002F8A35 /* Info.plist */,
-				DE822BB628170326000DDF86 /* Template-Dev-Info.plist */,
-				DE822BE728170336000DDF86 /* Template-Staging-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -331,6 +328,13 @@
 				DE5191AA2819AA3300C5260A /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		DE5191AE2819B15800C5260A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		DE822B822816FB2E000DDF86 /* Configures */ = {
