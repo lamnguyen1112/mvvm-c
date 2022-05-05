@@ -7,6 +7,7 @@ target 'Template' do
   # Pods for Template
   pod 'R.swift', '~> 6.1'
   pod 'SwiftEntryKit', '~> 2.0'
+  pod 'Moya', '~> 15.0'
   pod "DBDebugToolkit", :configurations => ['Develop', 'Staging']
   
 end
