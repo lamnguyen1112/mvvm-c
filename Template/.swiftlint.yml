@@ -1,0 +1,126 @@
+# Find all the available rules by running:
+# swiftlint rules
+disabled_rules: # rule identifiers to exclude from running, (suggestion)
+  - force_cast
+  - force_try
+  - control_statement
+  - todo
+  - block_based_kvo
+  - class_delegate_protocol
+  - closing_brace
+  - cyclomatic_complexity
+  - function_parameter_count
+  - generic_type_name
+  - implicit_getter
+  - mark
+  - redundant_string_enum_value
+  - trailing_whitespace
+  - unused_closure_parameter
+  - type_body_length
+  - trailing_newline
+  - multiple_closures_with_trailing_closure
+  - void_return
+  - legacy_constructor
+  - valid_ibinspectable
+  - private_over_fileprivate
+  - no_fallthrough_only
+  - vertical_parameter_alignment
+# some rules are only opt-in (Require)
+opt_in_rules:
+  - closure_spacing
+  - operator_usage_whitespace
+# paths to include during linting. `--path` is ignored if present.
+included:
+#   - Source
+# paths to ignore during linting. Takes precedence over `included`.
+excluded:
+  - Carthage
+  - Pods
+  - fastlane
+  - "Template/Common/Extensions"
+  - "Template/Resources/R.generated.swift"
+nesting:
+  type_level: 3
+#large tuple
+large_tuple:
+  warning: 5
+  error: 10
+# line length
+line_length:
+  warning: 300
+  error: 400
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+# special configuration for rules
+function_parameter_count:
+  warning: 8
+  error: 10
+# function body length
+function_body_length:
+  - 160 # warning
+  - 200 # error
+# file length
+file_length:
+  warning: 1024
+  error: 2048
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error/
+    warning: 40
+    error: 50
+  excluded:  # excluded via string
+    - T
+    - O
+    - Rx
+# identifier name
+identifier_name:
+  excluded:
+    - "DebugLog"
+    - "LocalizedString"
+    - T
+    - R
+    # - !i
+    # - !j
+    # - !x
+    # - !y
+    # - !a
+    # - !b
+    # - !r
+    # - !g
+  validates_start_with_lowercase: false
+  allowed_symbols:
+    - _
+  min_length: 2
+  max_length:
+    warning: 64
+    error: 100
+# reporter type (xcode, json, csv, checkstyle, junit, html, emoji)
+reporter: "xcode"
+# Require rules (All Rules was enabled by default, you don't put them into disabled_rules)
+  # - colon
+  # - comma
+  # - empty_enum_arguments
+  # - empty_parameters
+  # - file_length
+  # - function_body_length
+  # - line_length
+  # - opening_brace
+  # - redundant_discardable_let
+  # - redundant_optional_initialization
+  # - redundant_void_return
+  # - return_arrow_whitespace
+  # - statement_position
+  # - trailing_comma
+  # - trailing_semicolon
+  # - trailing_whitespace
+  # - type_name
+  # - unneeded_break_in_switch
+  # - unused_optional_binding
+  # - valid_ibinspectable
+  # - vertical_parameter_alignment
+  # - vertical_whitespace
+  # - weak_delegate
+

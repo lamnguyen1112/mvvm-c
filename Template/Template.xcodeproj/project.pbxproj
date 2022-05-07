@@ -27,6 +27,7 @@
 		DE5191A92819A54000C5260A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5191A82819A54000C5260A /* ProfileViewModel.swift */; };
 		DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE5191AA2819AA3300C5260A /* Localizable.strings */; };
 		DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */; };
+		DE864794282661D800A4096B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE864793282661D800A4096B /* .swiftlint.yml */; };
 		DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BB92813108000C2B793 /* LoginViewController.swift */; };
 		DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAE6BBA2813108000C2B793 /* LoginViewController.xib */; };
 		DEAE6BBE281310B100C2B793 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BBD281310B100C2B793 /* AuthCoordinator.swift */; };
@@ -87,6 +88,7 @@
 		DE822B832816FBE3000DDF86 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		DE822B842816FBF7000DDF86 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		DE822B852816FC0A000DDF86 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
+		DE864793282661D800A4096B /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DEAE6BB92813108000C2B793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEAE6BBA2813108000C2B793 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DEAE6BBD281310B100C2B793 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 		DE1836B32812F45C002F8A35 = {
 			isa = PBXGroup;
 			children = (
+				DE864793282661D800A4096B /* .swiftlint.yml */,
 				DE1836BE2812F45C002F8A35 /* Template */,
 				DE1836E4281300D5002F8A35 /* Libraries */,
 				DE1836BD2812F45C002F8A35 /* Products */,
@@ -410,6 +413,7 @@
 				DE1836B92812F45C002F8A35 /* Frameworks */,
 				DE1836BA2812F45C002F8A35 /* Resources */,
 				D01D376036B28A0B33C63504 /* [CP] Embed Pods Frameworks */,
+				DE8647952826622800A4096B /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -461,6 +465,7 @@
 				DE5191A52819A2D600C5260A /* ProfileViewController.xib in Resources */,
 				DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */,
 				DE1836CC2812F45D002F8A35 /* LaunchScreen.storyboard in Resources */,
+				DE864794282661D800A4096B /* .swiftlint.yml in Resources */,
 				DE1836C92812F45D002F8A35 /* Assets.xcassets in Resources */,
 				DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */,
 				DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */,
@@ -508,6 +513,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DE8647952826622800A4096B /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		DEB1B1B42815B05F00699414 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
