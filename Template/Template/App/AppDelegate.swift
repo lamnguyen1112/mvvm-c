@@ -9,7 +9,6 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
     var appCoordinator: AppCoordinator?
     
@@ -19,18 +18,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupDebugToolKit()
 
         return true
-    }
-}
-
-extension AppDelegate {
-    private func setupAppCoordinator() {
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let navigationController = UINavigationController.init()
-        appCoordinator = AppCoordinator(navigationController: navigationController)
-        appCoordinator!.start()
-        
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
     }
 }
