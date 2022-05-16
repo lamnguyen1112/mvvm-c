@@ -8,32 +8,28 @@
 import UIKit
 
 class AppCoordinator: BaseCoordinator {
-    private var isAuthenticate: Bool = false
     
-    override init(navigationController: UINavigationController) {
-        super.init(navigationController: navigationController)
+    // MARK: - Properties
+    private var window: UIWindow
+    
+    init(_ window: UIWindow) {
+        self.window = window
     }
     
     override func start() {
-        if !isAuthenticate {
-            gotoAuth()
-            return
-        }
-        
-        gotoHome()
+        gotoOnboard()
     }
     
-    private func gotoAuth() {
-        // Remove all children, because this is a top level coordinator.
+    private func gotoOnboard() {
         children.removeAll()
         
-        let authCoordinator = AuthCoordinator.init(navigationController: navigationController)
-        authCoordinator.parentCoordinator = self
-        children.append(authCoordinator)
+        let onboardCoordinator = OnboardCoordinator(window)
+        onboardCoordinator.parentCoordinator = self
+        children.append(onboardCoordinator)
         
-        authCoordinator.start()
+        onboardCoordinator.start()
     }
-    
+        
     func gotoHome() {
         // Remove all children, because this is a top level coordinator.
         children.removeAll()
@@ -46,13 +42,11 @@ class AppCoordinator: BaseCoordinator {
         
         // Remove view controller in navigation
         navigationController.viewControllers = []
-        isAuthenticate = true
     }
     
     func logout() {
-        isAuthenticate = false
         children.removeAll()
 
-        gotoAuth()
+        gotoOnboard()
     }
 }

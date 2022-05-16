@@ -1,5 +1,5 @@
 //
-//  AuthCoordinator.swift
+//  LoginCoordinator.swift
 //  Template
 //
 //  Created by Lam Nguyen on 4/22/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthCoordinator: BaseCoordinator {
+class LoginCoordinator: BaseCoordinator {
     
     override func start() {
         gotoLoginPage()
@@ -18,14 +18,13 @@ class AuthCoordinator: BaseCoordinator {
         let loginViewModel = LoginViewModel.init(navigation: self)
         loginVC.viewModel = loginViewModel
         
-        navigationController.viewControllers = [loginVC]
-        UIApplication.switchRootViewController(to: navigationController)
+        navigationController.pushViewController(loginVC, animated: true)
     }
 }
 
 // MARK: - Navigate
 
-extension AuthCoordinator: LoginNavigation {
+extension LoginCoordinator: LoginNavigation {
     func gotoHome() {
         guard let appCoordinator = parentCoordinator as? AppCoordinator else {
             return

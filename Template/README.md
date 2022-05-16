@@ -4,5 +4,16 @@ Libraries using in project:
 * DebugToolKit support debug
 * SwiftEntryKit to custom dialog
 
+* Use cocoapods-keys to store secret key
+
+-- 
 --
-Use cocoapods-keys to store secret key
+
+#Coding convension:
+--
+variable: 
+
+function:
+
+class:
+

@@ -32,6 +32,7 @@ extension LoginViewController {
 extension LoginViewController {
     private func setupUI() {
         title = R.string.localizable.loginTitle()
+        navigationController?.isNavigationBarHidden = false
     }
 }
 

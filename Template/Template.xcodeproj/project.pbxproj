@@ -27,12 +27,11 @@
 		DE5191A92819A54000C5260A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5191A82819A54000C5260A /* ProfileViewModel.swift */; };
 		DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE5191AA2819AA3300C5260A /* Localizable.strings */; };
 		DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */; };
-		DE864794282661D800A4096B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DE864793282661D800A4096B /* .swiftlint.yml */; };
 		DE86479728266BA400A4096B /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479628266BA400A4096B /* ExampleService.swift */; };
 		DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */; };
 		DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BB92813108000C2B793 /* LoginViewController.swift */; };
 		DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAE6BBA2813108000C2B793 /* LoginViewController.xib */; };
-		DEAE6BBE281310B100C2B793 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BBD281310B100C2B793 /* AuthCoordinator.swift */; };
+		DEAE6BBE281310B100C2B793 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BBD281310B100C2B793 /* LoginCoordinator.swift */; };
 		DEAE6BC0281310E100C2B793 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BBF281310E100C2B793 /* BaseViewModel.swift */; };
 		DEAE6BC2281311ED00C2B793 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BC1281311ED00C2B793 /* MainCoordinator.swift */; };
 		DEAE6BC42813126B00C2B793 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BC32813126B00C2B793 /* Colors.swift */; };
@@ -54,14 +53,20 @@
 		DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C92815BC7B00699414 /* String+Ex.swift */; };
 		DEB1B1CC2815BDFB00699414 /* UICollection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */; };
 		DEB1B1CE2815BF3100699414 /* Data+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1CD2815BF3100699414 /* Data+Ex.swift */; };
+		DED66C6B28329CA2003BDCAC /* OnboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C6A28329CA2003BDCAC /* OnboardCoordinator.swift */; };
+		DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7028329CDF003BDCAC /* OnboardViewModel.swift */; };
+		DED66C7428329D9A003BDCAC /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7228329D9A003BDCAC /* OnboardViewController.swift */; };
+		DED66C7528329D9A003BDCAC /* OnboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED66C7328329D9A003BDCAC /* OnboardViewController.xib */; };
+		DED66C7B2832C3EB003BDCAC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C792832C3EB003BDCAC /* SignUpViewController.swift */; };
+		DED66C7C2832C3EB003BDCAC /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED66C7A2832C3EB003BDCAC /* SignUpViewController.xib */; };
+		DED66C7E2832C406003BDCAC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7D2832C406003BDCAC /* SignUpViewModel.swift */; };
+		DED66C802832C41C003BDCAC /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7F2832C41C003BDCAC /* SignUpCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17AD3904A6C41FC155CE28F1 /* Pods-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.debug.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.debug.xcconfig"; sourceTree = "<group>"; };
 		453F111E1DE770C8E3D05A88 /* Pods_Template_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Template_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		642BB77DD9A8393539B2C140 /* Pods-Template.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.appstore.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.appstore.xcconfig"; sourceTree = "<group>"; };
 		81E4D5312014294C78676A9C /* Pods-Template.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.develop.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.develop.xcconfig"; sourceTree = "<group>"; };
-		8832620CA11D4F62D6A022EC /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
 		C1F61F146A916F2E81333DD6 /* Pods_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1836BC2812F45C002F8A35 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1836BF2812F45C002F8A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,12 +91,11 @@
 		DE822B832816FBE3000DDF86 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		DE822B842816FBF7000DDF86 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		DE822B852816FC0A000DDF86 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		DE864793282661D800A4096B /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DE86479628266BA400A4096B /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 		DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Coordinate.swift"; sourceTree = "<group>"; };
 		DEAE6BB92813108000C2B793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEAE6BBA2813108000C2B793 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		DEAE6BBD281310B100C2B793 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		DEAE6BBD281310B100C2B793 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		DEAE6BBF281310E100C2B793 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		DEAE6BC1281311ED00C2B793 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		DEAE6BC32813126B00C2B793 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -113,6 +117,14 @@
 		DEB1B1C92815BC7B00699414 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+Ex.swift"; sourceTree = "<group>"; };
 		DEB1B1CD2815BF3100699414 /* Data+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ex.swift"; sourceTree = "<group>"; };
+		DED66C6A28329CA2003BDCAC /* OnboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCoordinator.swift; sourceTree = "<group>"; };
+		DED66C7028329CDF003BDCAC /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
+		DED66C7228329D9A003BDCAC /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		DED66C7328329D9A003BDCAC /* OnboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardViewController.xib; sourceTree = "<group>"; };
+		DED66C792832C3EB003BDCAC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DED66C7A2832C3EB003BDCAC /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		DED66C7D2832C406003BDCAC /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		DED66C7F2832C41C003BDCAC /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		EE08CBEAB619CBCDEC45A1AB /* Pods-Template.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.staging.xcconfig"; path = "Target Support Files/Pods-Template/Pods-Template.staging.xcconfig"; sourceTree = "<group>"; };
 		EE2BF3E0D6CD586483ADED01 /* Pods_Template_Staging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Template_Staging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,8 +145,6 @@
 		77D16DCCB96766241490D1DF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17AD3904A6C41FC155CE28F1 /* Pods-Template.debug.xcconfig */,
-				8832620CA11D4F62D6A022EC /* Pods-Template.release.xcconfig */,
 				81E4D5312014294C78676A9C /* Pods-Template.develop.xcconfig */,
 				EE08CBEAB619CBCDEC45A1AB /* Pods-Template.staging.xcconfig */,
 				642BB77DD9A8393539B2C140 /* Pods-Template.appstore.xcconfig */,
@@ -145,7 +155,6 @@
 		DE1836B32812F45C002F8A35 = {
 			isa = PBXGroup;
 			children = (
-				DE864793282661D800A4096B /* .swiftlint.yml */,
 				DE1836BE2812F45C002F8A35 /* Template */,
 				DE1836E4281300D5002F8A35 /* Libraries */,
 				DE1836BD2812F45C002F8A35 /* Products */,
@@ -198,6 +207,7 @@
 		DE1836D52812F609002F8A35 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DED66C6928329B10003BDCAC /* Onboard */,
 				DE1836E728130158002F8A35 /* Auth */,
 				DE1836E628130153002F8A35 /* Main */,
 				DE51919628199C2F00C5260A /* WatchList */,
@@ -277,8 +287,8 @@
 		DE1836E728130158002F8A35 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				DEAE6BBD281310B100C2B793 /* AuthCoordinator.swift */,
 				DEAE6BB828130EB500C2B793 /* Login */,
+				DED66C782832C3B3003BDCAC /* SignUp */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -355,6 +365,7 @@
 		DEAE6BB828130EB500C2B793 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				DEAE6BBD281310B100C2B793 /* LoginCoordinator.swift */,
 				DEB1B1AB2815366500699414 /* LoginViewModel.swift */,
 				DEAE6BB92813108000C2B793 /* LoginViewController.swift */,
 				DEAE6BBA2813108000C2B793 /* LoginViewController.xib */,
@@ -382,6 +393,28 @@
 				DEB1B1C92815BC7B00699414 /* String+Ex.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DED66C6928329B10003BDCAC /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				DED66C6A28329CA2003BDCAC /* OnboardCoordinator.swift */,
+				DED66C7028329CDF003BDCAC /* OnboardViewModel.swift */,
+				DED66C7228329D9A003BDCAC /* OnboardViewController.swift */,
+				DED66C7328329D9A003BDCAC /* OnboardViewController.xib */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
+		DED66C782832C3B3003BDCAC /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DED66C7F2832C41C003BDCAC /* SignUpCoordinator.swift */,
+				DED66C7D2832C406003BDCAC /* SignUpViewModel.swift */,
+				DED66C792832C3EB003BDCAC /* SignUpViewController.swift */,
+				DED66C7A2832C3EB003BDCAC /* SignUpViewController.xib */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		E968D09A6B2B11A4F7B3F147 /* Frameworks */ = {
@@ -459,9 +492,10 @@
 				DE5191A52819A2D600C5260A /* ProfileViewController.xib in Resources */,
 				DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */,
 				DE1836CC2812F45D002F8A35 /* LaunchScreen.storyboard in Resources */,
-				DE864794282661D800A4096B /* .swiftlint.yml in Resources */,
 				DE1836C92812F45D002F8A35 /* Assets.xcassets in Resources */,
 				DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */,
+				DED66C7528329D9A003BDCAC /* OnboardViewController.xib in Resources */,
+				DED66C7C2832C3EB003BDCAC /* SignUpViewController.xib in Resources */,
 				DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,13 +596,16 @@
 				DEB1B1CE2815BF3100699414 /* Data+Ex.swift in Sources */,
 				DEAE6BC42813126B00C2B793 /* Colors.swift in Sources */,
 				DE1836E02812FFF6002F8A35 /* SelfSizingTableView.swift in Sources */,
+				DED66C7E2832C406003BDCAC /* SignUpViewModel.swift in Sources */,
 				DE1836DA2812F6D1002F8A35 /* AppCoordinator.swift in Sources */,
 				DE1836E228130054002F8A35 /* SelfSizingCollectionView.swift in Sources */,
 				DE1836DD2812FD37002F8A35 /* BaseViewController.swift in Sources */,
+				DED66C6B28329CA2003BDCAC /* OnboardCoordinator.swift in Sources */,
 				DE51919C28199E5E00C5260A /* WatchListViewController.swift in Sources */,
 				DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */,
 				DEB1B1B028153B7900699414 /* MainViewController.swift in Sources */,
 				DEB1B1C22815B75E00699414 /* UIDevice+Ex.swift in Sources */,
+				DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */,
 				DEB1B1C82815B9E100699414 /* String+Date+Ex.swift in Sources */,
 				DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */,
 				DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */,
@@ -579,15 +616,18 @@
 				DEB1B1B62815B15700699414 /* R.generated.swift in Sources */,
 				DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */,
 				DEAE6BC92813161C00C2B793 /* UIStoryBoard+Ex.swift in Sources */,
+				DED66C7428329D9A003BDCAC /* OnboardViewController.swift in Sources */,
 				DE1836C02812F45C002F8A35 /* AppDelegate.swift in Sources */,
 				DE5191A92819A54000C5260A /* ProfileViewModel.swift in Sources */,
 				DEAE6BC2281311ED00C2B793 /* MainCoordinator.swift in Sources */,
 				DEB1B1C42815B90200699414 /* UINavigation+Ex.swift in Sources */,
 				DEB1B1B82815B41300699414 /* Date+Ex.swift in Sources */,
 				DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */,
-				DEAE6BBE281310B100C2B793 /* AuthCoordinator.swift in Sources */,
+				DEAE6BBE281310B100C2B793 /* LoginCoordinator.swift in Sources */,
+				DED66C7B2832C3EB003BDCAC /* SignUpViewController.swift in Sources */,
 				DE1836D72812F638002F8A35 /* Coordinator.swift in Sources */,
 				DEAE6BCB2813169E00C2B793 /* UIApplication+Ex.swift in Sources */,
+				DED66C802832C41C003BDCAC /* SignUpCoordinator.swift in Sources */,
 				DE5191A42819A2D600C5260A /* ProfileViewController.swift in Sources */,
 				DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */,
 				DEB1B1CC2815BDFB00699414 /* UICollection+Ex.swift in Sources */,
