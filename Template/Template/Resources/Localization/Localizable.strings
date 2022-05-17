@@ -6,6 +6,10 @@
   
 */
 
+// When create new localization need use format "screen.contentLocalization"
+// if common use format "contentLocalazition"
+// if alert use format "alert.typeAlert.Content"
+
 // Common
 "ok" = "Ok";
 "cancel" = "Cancel";
@@ -18,3 +22,9 @@
 
 // Profile
 "profile.title" = "Profile";
+
+// alert
+"alert.common.title" = "alert";
+
+// Users
+"users.title" = "Users";

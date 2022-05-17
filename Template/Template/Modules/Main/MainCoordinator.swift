@@ -21,10 +21,22 @@ class MainCoordinator: BaseCoordinator {
         watchCoordinator.parentCoordinator = parentCoordinator
         
         // Create the tabbar item for tabbar.
+        
+        // Setup for watch list
         let watchListItem = UITabBarItem()
         watchListItem.title = "Watch List"
         watchListItem.image = UIImage.init(systemName: "house.fill")
         watchListNavigationController.tabBarItem = watchListItem
+        
+        // Setup for Users
+        let usersNavigationController = UINavigationController()
+        let usersCoordinator = UsersCoordinator.init(navigationController: usersNavigationController)
+        usersCoordinator.parentCoordinator = parentCoordinator
+        
+        let usersItem = UITabBarItem()
+        usersItem.title = "Users"
+        usersItem.image = UIImage.init(systemName: "person.circle")
+        usersNavigationController.tabBarItem = usersItem
         
         // Setup for profile tab
         let profileNavigationController = UINavigationController()
@@ -36,14 +48,16 @@ class MainCoordinator: BaseCoordinator {
         profileItem.image = UIImage.init(systemName: "person.fill")
         profileNavigationController.tabBarItem = profileItem
         
-        mainVC.viewControllers = [watchListNavigationController, profileNavigationController]
+        mainVC.viewControllers = [watchListNavigationController, usersNavigationController, profileNavigationController]
         UIApplication.switchRootViewController(to: mainVC, animated: true)
         
         // Add the coordinator into parent's child
         parentCoordinator?.children.append(watchCoordinator)
+        parentCoordinator?.children.append(usersCoordinator)
         parentCoordinator?.children.append(profileCoordinator)
         
         watchCoordinator.start()
+        usersCoordinator.start()
         profileCoordinator.start()
     }
 }

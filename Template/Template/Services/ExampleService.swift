@@ -14,7 +14,7 @@ public enum ExampleService {
 
 extension ExampleService: TargetType {
     public var baseURL: URL {
-        return URL(string: "http://example.com/")!
+        return URL(string: "https://jsonplaceholder.typicode.com/")!
     }
     
     public var path: String {

@@ -23,3 +23,4 @@ using raywenderlich coding convension
 * https://demirciy.medium.com/mvvm-in-ios-development-with-protocol-closure-reactive-programming-rxswift-d0933b235235
 * https://medium.com/nerd-for-tech/mvvm-coordinators-ios-architecture-tutorial-fb27eaa36470
 * https://github.com/tristanhimmelman/ObjectMapper
+* https://github.com/huri000/SwiftEntryKit

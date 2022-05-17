@@ -53,6 +53,12 @@
 		DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1C92815BC7B00699414 /* String+Ex.swift */; };
 		DEB1B1CC2815BDFB00699414 /* UICollection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */; };
 		DEB1B1CE2815BF3100699414 /* Data+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB1B1CD2815BF3100699414 /* Data+Ex.swift */; };
+		DEBCEA6A28340625006674AE /* UsersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCEA6928340625006674AE /* UsersCoordinator.swift */; };
+		DEBCEA6D2834063D006674AE /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCEA6B2834063D006674AE /* UsersViewController.swift */; };
+		DEBCEA6E2834063D006674AE /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBCEA6C2834063D006674AE /* UsersViewController.xib */; };
+		DEBCEA7028340652006674AE /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCEA6F28340652006674AE /* UsersViewModel.swift */; };
+		DEBCEA7428340BBC006674AE /* UsersItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBCEA7228340BBC006674AE /* UsersItemViewCell.swift */; };
+		DEBCEA7528340BBC006674AE /* UsersItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBCEA7328340BBC006674AE /* UsersItemViewCell.xib */; };
 		DED66C6B28329CA2003BDCAC /* OnboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C6A28329CA2003BDCAC /* OnboardCoordinator.swift */; };
 		DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7028329CDF003BDCAC /* OnboardViewModel.swift */; };
 		DED66C7428329D9A003BDCAC /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7228329D9A003BDCAC /* OnboardViewController.swift */; };
@@ -119,6 +125,12 @@
 		DEB1B1C92815BC7B00699414 /* String+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ex.swift"; sourceTree = "<group>"; };
 		DEB1B1CB2815BDFB00699414 /* UICollection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollection+Ex.swift"; sourceTree = "<group>"; };
 		DEB1B1CD2815BF3100699414 /* Data+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ex.swift"; sourceTree = "<group>"; };
+		DEBCEA6928340625006674AE /* UsersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersCoordinator.swift; sourceTree = "<group>"; };
+		DEBCEA6B2834063D006674AE /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		DEBCEA6C2834063D006674AE /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
+		DEBCEA6F28340652006674AE /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		DEBCEA7228340BBC006674AE /* UsersItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersItemViewCell.swift; sourceTree = "<group>"; };
+		DEBCEA7328340BBC006674AE /* UsersItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersItemViewCell.xib; sourceTree = "<group>"; };
 		DED66C6A28329CA2003BDCAC /* OnboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardCoordinator.swift; sourceTree = "<group>"; };
 		DED66C7028329CDF003BDCAC /* OnboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewModel.swift; sourceTree = "<group>"; };
 		DED66C7228329D9A003BDCAC /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +228,7 @@
 				DE1836E628130153002F8A35 /* Main */,
 				DED66C832832CE23003BDCAC /* Market */,
 				DE51919628199C2F00C5260A /* WatchList */,
+				DEBCEA6828340600006674AE /* Users */,
 				DE51919728199C4500C5260A /* Trade */,
 				DE51919828199C4D00C5260A /* Community */,
 				DE51919928199C5500C5260A /* Profile */,
@@ -401,6 +414,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DEBCEA6828340600006674AE /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCEA7128340ACE006674AE /* Cells */,
+				DEBCEA6928340625006674AE /* UsersCoordinator.swift */,
+				DEBCEA6F28340652006674AE /* UsersViewModel.swift */,
+				DEBCEA6B2834063D006674AE /* UsersViewController.swift */,
+				DEBCEA6C2834063D006674AE /* UsersViewController.xib */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		DEBCEA7128340ACE006674AE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEBCEA7228340BBC006674AE /* UsersItemViewCell.swift */,
+				DEBCEA7328340BBC006674AE /* UsersItemViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		DED66C6928329B10003BDCAC /* Onboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,8 +547,10 @@
 				DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */,
 				DE1836CC2812F45D002F8A35 /* LaunchScreen.storyboard in Resources */,
 				DE1836C92812F45D002F8A35 /* Assets.xcassets in Resources */,
+				DEBCEA6E2834063D006674AE /* UsersViewController.xib in Resources */,
 				DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */,
 				DED66C7528329D9A003BDCAC /* OnboardViewController.xib in Resources */,
+				DEBCEA7528340BBC006674AE /* UsersItemViewCell.xib in Resources */,
 				DED66C7C2832C3EB003BDCAC /* SignUpViewController.xib in Resources */,
 				DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */,
 			);
@@ -622,9 +658,11 @@
 				DE1836DD2812FD37002F8A35 /* BaseViewController.swift in Sources */,
 				DED66C6B28329CA2003BDCAC /* OnboardCoordinator.swift in Sources */,
 				DE51919C28199E5E00C5260A /* WatchListViewController.swift in Sources */,
+				DEBCEA6D2834063D006674AE /* UsersViewController.swift in Sources */,
 				DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */,
 				DEB1B1B028153B7900699414 /* MainViewController.swift in Sources */,
 				DEB1B1C22815B75E00699414 /* UIDevice+Ex.swift in Sources */,
+				DEBCEA7028340652006674AE /* UsersViewModel.swift in Sources */,
 				DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */,
 				DEB1B1C82815B9E100699414 /* String+Date+Ex.swift in Sources */,
 				DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */,
@@ -635,6 +673,7 @@
 				DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */,
 				DEB1B1B62815B15700699414 /* R.generated.swift in Sources */,
 				DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */,
+				DEBCEA7428340BBC006674AE /* UsersItemViewCell.swift in Sources */,
 				DEAE6BC92813161C00C2B793 /* UIStoryBoard+Ex.swift in Sources */,
 				DED66C7428329D9A003BDCAC /* OnboardViewController.swift in Sources */,
 				DE1836C02812F45C002F8A35 /* AppDelegate.swift in Sources */,
@@ -646,6 +685,7 @@
 				DEAE6BBE281310B100C2B793 /* LoginCoordinator.swift in Sources */,
 				DED66C7B2832C3EB003BDCAC /* SignUpViewController.swift in Sources */,
 				DE1836D72812F638002F8A35 /* Coordinator.swift in Sources */,
+				DEBCEA6A28340625006674AE /* UsersCoordinator.swift in Sources */,
 				DEAE6BCB2813169E00C2B793 /* UIApplication+Ex.swift in Sources */,
 				DED66C802832C41C003BDCAC /* SignUpCoordinator.swift in Sources */,
 				DE5191A42819A2D600C5260A /* ProfileViewController.swift in Sources */,
