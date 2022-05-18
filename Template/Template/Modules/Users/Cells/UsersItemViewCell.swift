@@ -16,8 +16,8 @@ class UsersItemViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setUser(_ user: String) {
-        userNameLbl.text = user
+    func setUser(_ user: User) {
+        userNameLbl.text = user.name
     }
     
 }

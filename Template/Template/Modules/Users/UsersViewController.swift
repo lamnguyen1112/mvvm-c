@@ -21,6 +21,12 @@ class UsersViewController: BaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupUI()
+        bindUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        usersViewModel.getUsers()
     }
 }
 
@@ -30,7 +36,14 @@ extension UsersViewController {
         
         usersTableView.rowHeight = UITableView.automaticDimension
         usersTableView.dataSource = self
+        usersTableView.delegate = self
         UsersItemViewCell.registerNib(to: usersTableView)
+    }
+    
+    private func bindUI() {
+        usersViewModel.didGetUsers = { [weak self] in
+            self?.usersTableView.reloadData()
+        }
     }
 }
 

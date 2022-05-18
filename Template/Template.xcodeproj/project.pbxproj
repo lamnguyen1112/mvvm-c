@@ -26,6 +26,12 @@
 		DE5191A72819A4BB00C5260A /* WatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5191A62819A4BB00C5260A /* WatchListViewModel.swift */; };
 		DE5191A92819A54000C5260A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5191A82819A54000C5260A /* ProfileViewModel.swift */; };
 		DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE5191AA2819AA3300C5260A /* Localizable.strings */; };
+		DE755B182835811000210B9B /* ExampleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B172835811000210B9B /* ExampleAdapter.swift */; };
+		DE755B1B283582FD00210B9B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B1A283582FD00210B9B /* UserModel.swift */; };
+		DE755B1F28358D4E00210B9B /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = DE755B1E28358D4E00210B9B /* ObjectMapper */; };
+		DE755B2528358D7100210B9B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DE755B2128358D7100210B9B /* LICENSE */; };
+		DE755B2628358D7100210B9B /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B2328358D7100210B9B /* Response+ObjectMapper.swift */; };
+		DE755B2728358D7100210B9B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE755B2428358D7100210B9B /* README.md */; };
 		DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */; };
 		DE86479728266BA400A4096B /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479628266BA400A4096B /* ExampleService.swift */; };
 		DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */; };
@@ -68,7 +74,6 @@
 		DED66C7E2832C406003BDCAC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7D2832C406003BDCAC /* SignUpViewModel.swift */; };
 		DED66C802832C41C003BDCAC /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7F2832C41C003BDCAC /* SignUpCoordinator.swift */; };
 		DED66C822832CDE4003BDCAC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED66C812832CDE4003BDCAC /* Colors.xcassets */; };
-		DED66C862832CEF5003BDCAC /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = DED66C852832CEF5003BDCAC /* ObjectMapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +100,11 @@
 		DE5191A62819A4BB00C5260A /* WatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModel.swift; sourceTree = "<group>"; };
 		DE5191A82819A54000C5260A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		DE5191AA2819AA3300C5260A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		DE755B172835811000210B9B /* ExampleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAdapter.swift; sourceTree = "<group>"; };
+		DE755B1A283582FD00210B9B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		DE755B2128358D7100210B9B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DE755B2328358D7100210B9B /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
+		DE755B2428358D7100210B9B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Setting.swift"; sourceTree = "<group>"; };
 		DE822B832816FBE3000DDF86 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		DE822B842816FBF7000DDF86 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
@@ -149,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DED66C862832CEF5003BDCAC /* ObjectMapper in Frameworks */,
+				DE755B1F28358D4E00210B9B /* ObjectMapper in Frameworks */,
 				9F94CD919C4A17AA8AA59127 /* (null) in Frameworks */,
 				69DF1BC96D9B7A09F87CB222 /* Pods_Template.framework in Frameworks */,
 			);
@@ -192,6 +202,7 @@
 			children = (
 				DE1836D42812F5FA002F8A35 /* App */,
 				DE1836D52812F609002F8A35 /* Modules */,
+				DE755B19283582DF00210B9B /* Models */,
 				DE1836E528130142002F8A35 /* Services */,
 				DE1836D82812F647002F8A35 /* Common */,
 				DE1836DB2812FB74002F8A35 /* Resources */,
@@ -282,6 +293,7 @@
 		DE1836E4281300D5002F8A35 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				DE755B2028358D7100210B9B /* Moya-ObjectMapper */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 		DE1836E528130142002F8A35 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DE755B172835811000210B9B /* ExampleAdapter.swift */,
 				DE86479628266BA400A4096B /* ExampleService.swift */,
 			);
 			path = Services;
@@ -361,6 +374,32 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DE755B19283582DF00210B9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE755B1A283582FD00210B9B /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE755B2028358D7100210B9B /* Moya-ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				DE755B2128358D7100210B9B /* LICENSE */,
+				DE755B2228358D7100210B9B /* Source */,
+				DE755B2428358D7100210B9B /* README.md */,
+			);
+			path = "Moya-ObjectMapper";
+			sourceTree = "<group>";
+		};
+		DE755B2228358D7100210B9B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DE755B2328358D7100210B9B /* Response+ObjectMapper.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		DE822B822816FB2E000DDF86 /* Configures */ = {
@@ -495,7 +534,7 @@
 			);
 			name = Template;
 			packageProductDependencies = (
-				DED66C852832CEF5003BDCAC /* ObjectMapper */,
+				DE755B1E28358D4E00210B9B /* ObjectMapper */,
 			);
 			productName = Template;
 			productReference = DE1836BC2812F45C002F8A35 /* Template.app */;
@@ -526,7 +565,7 @@
 			);
 			mainGroup = DE1836B32812F45C002F8A35;
 			packageReferences = (
-				DED66C842832CEF5003BDCAC /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 			);
 			productRefGroup = DE1836BD2812F45C002F8A35 /* Products */;
 			projectDirPath = "";
@@ -546,8 +585,10 @@
 				DE5191A52819A2D600C5260A /* ProfileViewController.xib in Resources */,
 				DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */,
 				DE1836CC2812F45D002F8A35 /* LaunchScreen.storyboard in Resources */,
+				DE755B2728358D7100210B9B /* README.md in Resources */,
 				DE1836C92812F45D002F8A35 /* Assets.xcassets in Resources */,
 				DEBCEA6E2834063D006674AE /* UsersViewController.xib in Resources */,
+				DE755B2528358D7100210B9B /* LICENSE in Resources */,
 				DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */,
 				DED66C7528329D9A003BDCAC /* OnboardViewController.xib in Resources */,
 				DEBCEA7528340BBC006674AE /* UsersItemViewCell.xib in Resources */,
@@ -664,12 +705,14 @@
 				DEB1B1C22815B75E00699414 /* UIDevice+Ex.swift in Sources */,
 				DEBCEA7028340652006674AE /* UsersViewModel.swift in Sources */,
 				DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */,
+				DE755B182835811000210B9B /* ExampleAdapter.swift in Sources */,
 				DEB1B1C82815B9E100699414 /* String+Date+Ex.swift in Sources */,
 				DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */,
 				DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */,
 				DE5191A72819A4BB00C5260A /* WatchListViewModel.swift in Sources */,
 				DEAE6BC0281310E100C2B793 /* BaseViewModel.swift in Sources */,
 				DEB1B1AC2815366500699414 /* LoginViewModel.swift in Sources */,
+				DE755B1B283582FD00210B9B /* UserModel.swift in Sources */,
 				DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */,
 				DEB1B1B62815B15700699414 /* R.generated.swift in Sources */,
 				DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */,
@@ -682,6 +725,7 @@
 				DEB1B1C42815B90200699414 /* UINavigation+Ex.swift in Sources */,
 				DEB1B1B82815B41300699414 /* Date+Ex.swift in Sources */,
 				DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */,
+				DE755B2628358D7100210B9B /* Response+ObjectMapper.swift in Sources */,
 				DEAE6BBE281310B100C2B793 /* LoginCoordinator.swift in Sources */,
 				DED66C7B2832C3EB003BDCAC /* SignUpViewController.swift in Sources */,
 				DE1836D72812F638002F8A35 /* Coordinator.swift in Sources */,
@@ -754,7 +798,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -840,7 +884,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -931,7 +975,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -996,20 +1040,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DED66C842832CEF5003BDCAC /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+		DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DED66C852832CEF5003BDCAC /* ObjectMapper */ = {
+		DE755B1E28358D4E00210B9B /* ObjectMapper */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DED66C842832CEF5003BDCAC /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			package = DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
 		};
 /* End XCSwiftPackageProductDependency section */
