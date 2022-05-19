@@ -8,7 +8,10 @@
 import UIKit
 
 class UsersViewModel: BaseViewModel {
-    var users: [User] = [] {
+    
+    private let service = ExampleService()
+    
+    var users: [UserModel] = [] {
         didSet {
             didGetUsers?()
         }
@@ -17,9 +20,9 @@ class UsersViewModel: BaseViewModel {
     var didGetUsers: (() -> Void)?
     
     func getUsers() {
-        ExampleAdapter.request(target: .users) { [weak self] response in
+        service.request(target: .users) { [weak self] response in
             do {
-                let users: [User]? = try response.mapArray(User.self)
+                let users: [UserModel]? = try response.mapArray(UserModel.self)
                 if let users = users {
                     self?.users = users
                 }

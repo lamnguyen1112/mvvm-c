@@ -16,7 +16,7 @@ class UsersItemViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func setUser(_ user: User) {
+    func setUser(_ user: UserModel) {
         userNameLbl.text = user.name
     }
     

@@ -1,47 +1,62 @@
 //
-//  Network.swift
+//  ExampleAdapter.swift
 //  Template
 //
-//  Created by Lam Nguyen on 5/7/22.
+//  Created by Lam Nguyen on 5/19/22.
 //
 
+import Foundation
 import Moya
 
-public enum ExampleService {
-    case users
-    case details
-}
-
-extension ExampleService: TargetType {
-    public var baseURL: URL {
-        return URL(string: "https://jsonplaceholder.typicode.com")!
-    }
+class ExampleService {
     
-    public var path: String {
-        switch self {
-        case .users: return "/users"
-        case .details: return "/details"
-        }
-    }
-    
-    public var method: Method {
-        switch self {
-        case .users:
-            return .get
+    let provider = MoyaProvider<ExampleTarget>(endpointClosure: { (target: ExampleTarget) -> Endpoint in
+        let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
+        switch target {
         default:
-            return .post
+            let httpHeaderFields = ["Content-Type": "application/json"]
+            return defaultEndpoint.adding(newHTTPHeaderFields: httpHeaderFields)
         }
-    }
+    }, plugins: [
+        NetworkLoggerPlugin(configuration: .init(formatter: .init(), output: { (target, array) in
+            if let log = array.first {
+                print("----------------------- cURL ------------------------")
+                print(log)
+            }
+        }, logOptions: .formatRequestAscURL))
+    ])
     
-    public var task: Task {
-        return .requestPlain
-    }
+    let domain: String = "com.example.helloworld"
     
-    public var headers: [String: String]? {
-        return ["Content-Type": "application/json"]
-    }
-    
-    public var validationType: ValidationType {
-        return .successCodes
+    func request(target: ExampleTarget,
+                        success successCallback: @escaping (Response) -> Void,
+                        error errorCallback: @escaping (Swift.Error) -> Void,
+                        failure failureCallback: @escaping (MoyaError) -> Void) {
+        provider.request(target) { [weak self] (result) in
+            guard let `self` = self else {
+                return
+            }
+            
+            switch result {
+            case .success(let response):
+                do {
+                    let json = try response.mapJSON()
+                    print("----------------------- RESPONSE ------------------------")
+                    print(json)
+                } catch {
+                    print(error)
+                    errorCallback(error)
+                }
+                
+                if response.statusCode >= 200 && response.statusCode <= 300 {
+                    successCallback(response)
+                } else {
+                    let error = NSError(domain: self.domain, code: 0, userInfo: [NSLocalizedDescriptionKey: "Parsing Error"])
+                    errorCallback(error)
+                }
+            case .failure(let error):
+                failureCallback(error)
+            }
+        }
     }
 }

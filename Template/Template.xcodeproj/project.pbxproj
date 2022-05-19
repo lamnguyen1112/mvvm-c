@@ -26,14 +26,14 @@
 		DE5191A72819A4BB00C5260A /* WatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5191A62819A4BB00C5260A /* WatchListViewModel.swift */; };
 		DE5191A92819A54000C5260A /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5191A82819A54000C5260A /* ProfileViewModel.swift */; };
 		DE5191AB2819AA3300C5260A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE5191AA2819AA3300C5260A /* Localizable.strings */; };
-		DE755B182835811000210B9B /* ExampleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B172835811000210B9B /* ExampleAdapter.swift */; };
+		DE755B182835811000210B9B /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B172835811000210B9B /* ExampleService.swift */; };
 		DE755B1B283582FD00210B9B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B1A283582FD00210B9B /* UserModel.swift */; };
 		DE755B1F28358D4E00210B9B /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = DE755B1E28358D4E00210B9B /* ObjectMapper */; };
 		DE755B2528358D7100210B9B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DE755B2128358D7100210B9B /* LICENSE */; };
 		DE755B2628358D7100210B9B /* Response+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE755B2328358D7100210B9B /* Response+ObjectMapper.swift */; };
 		DE755B2728358D7100210B9B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE755B2428358D7100210B9B /* README.md */; };
 		DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */; };
-		DE86479728266BA400A4096B /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479628266BA400A4096B /* ExampleService.swift */; };
+		DE86479728266BA400A4096B /* ExampleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479628266BA400A4096B /* ExampleTarget.swift */; };
 		DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */; };
 		DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BB92813108000C2B793 /* LoginViewController.swift */; };
 		DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAE6BBA2813108000C2B793 /* LoginViewController.xib */; };
@@ -100,7 +100,7 @@
 		DE5191A62819A4BB00C5260A /* WatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewModel.swift; sourceTree = "<group>"; };
 		DE5191A82819A54000C5260A /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		DE5191AA2819AA3300C5260A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		DE755B172835811000210B9B /* ExampleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAdapter.swift; sourceTree = "<group>"; };
+		DE755B172835811000210B9B /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
 		DE755B1A283582FD00210B9B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		DE755B2128358D7100210B9B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DE755B2328358D7100210B9B /* Response+ObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+ObjectMapper.swift"; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		DE822B832816FBE3000DDF86 /* Develop.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Develop.xcconfig; sourceTree = "<group>"; };
 		DE822B842816FBF7000DDF86 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
 		DE822B852816FC0A000DDF86 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
-		DE86479628266BA400A4096B /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
+		DE86479628266BA400A4096B /* ExampleTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTarget.swift; sourceTree = "<group>"; };
 		DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Coordinate.swift"; sourceTree = "<group>"; };
 		DEAE6BB92813108000C2B793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEAE6BBA2813108000C2B793 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -301,8 +301,8 @@
 		DE1836E528130142002F8A35 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DE755B172835811000210B9B /* ExampleAdapter.swift */,
-				DE86479628266BA400A4096B /* ExampleService.swift */,
+				DE755B172835811000210B9B /* ExampleService.swift */,
+				DE86479628266BA400A4096B /* ExampleTarget.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -684,7 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE86479728266BA400A4096B /* ExampleService.swift in Sources */,
+				DE86479728266BA400A4096B /* ExampleTarget.swift in Sources */,
 				DEB1B1C62815B97400699414 /* Collection+Ex.swift in Sources */,
 				DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */,
 				DEB1B1BE2815B5A400699414 /* UIView+Ex.swift in Sources */,
@@ -705,7 +705,7 @@
 				DEB1B1C22815B75E00699414 /* UIDevice+Ex.swift in Sources */,
 				DEBCEA7028340652006674AE /* UsersViewModel.swift in Sources */,
 				DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */,
-				DE755B182835811000210B9B /* ExampleAdapter.swift in Sources */,
+				DE755B182835811000210B9B /* ExampleService.swift in Sources */,
 				DEB1B1C82815B9E100699414 /* String+Date+Ex.swift in Sources */,
 				DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */,
 				DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */,
