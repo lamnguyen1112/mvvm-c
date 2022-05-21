@@ -61,6 +61,7 @@ extension UsersViewController: UITableViewDataSource {
         let user = usersViewModel.users[indexPath.row]
         cell.setUser(user)
         cell.selectionStyle = .default
+        cell.setSeparatorFullWidth()
 
         return cell
     }
@@ -71,5 +72,7 @@ extension UsersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let user = usersViewModel.users[indexPath.row]
+        usersViewModel.gotoUserDetails(user)
     }
 }

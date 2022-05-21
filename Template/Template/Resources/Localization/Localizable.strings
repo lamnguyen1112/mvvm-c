@@ -28,3 +28,6 @@
 
 // Users
 "users.title" = "Users";
+
+// User Details
+"userdetails.title" = "User Details";

@@ -5,6 +5,7 @@
 * SwiftEntryKit to custom dialog
 * Use cocoapods-keys to store secret key
 * Use ObjectMapper to mapping json
+
 --
 
 #Coding convension using in project:
@@ -24,3 +25,4 @@ using raywenderlich coding convension
 * https://medium.com/nerd-for-tech/mvvm-coordinators-ios-architecture-tutorial-fb27eaa36470
 * https://github.com/tristanhimmelman/ObjectMapper
 * https://github.com/huri000/SwiftEntryKit
+* https://github.com/kukushi/SideMenu

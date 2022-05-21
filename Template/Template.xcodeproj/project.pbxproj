@@ -17,6 +17,12 @@
 		DE1836DD2812FD37002F8A35 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1836DC2812FD37002F8A35 /* BaseViewController.swift */; };
 		DE1836E02812FFF6002F8A35 /* SelfSizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1836DF2812FFF6002F8A35 /* SelfSizingTableView.swift */; };
 		DE1836E228130054002F8A35 /* SelfSizingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1836E128130054002F8A35 /* SelfSizingCollectionView.swift */; };
+		DE3CDC232836DC560071F4D4 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE3CDC222836DC560071F4D4 /* Nuke */; };
+		DE43228D283856F100E469B2 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43228B283856F100E469B2 /* UserDetailsViewController.swift */; };
+		DE43228E283856F100E469B2 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE43228C283856F100E469B2 /* UserDetailsViewController.xib */; };
+		DE4322902838570A00E469B2 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */; };
+		DE4322922838572000E469B2 /* UserDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */; };
+		DE43229528385ABB00E469B2 /* BaseCoordinator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43229428385ABB00E469B2 /* BaseCoordinator+Extension.swift */; };
 		DE51919C28199E5E00C5260A /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51919A28199E5E00C5260A /* WatchListViewController.swift */; };
 		DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE51919B28199E5E00C5260A /* WatchListViewController.xib */; };
 		DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51919E2819A0D600C5260A /* WatchListCoordinator.swift */; };
@@ -91,6 +97,11 @@
 		DE1836DC2812FD37002F8A35 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DE1836DF2812FFF6002F8A35 /* SelfSizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableView.swift; sourceTree = "<group>"; };
 		DE1836E128130054002F8A35 /* SelfSizingCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingCollectionView.swift; sourceTree = "<group>"; };
+		DE43228B283856F100E469B2 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		DE43228C283856F100E469B2 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
+		DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
+		DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsCoordinator.swift; sourceTree = "<group>"; };
+		DE43229428385ABB00E469B2 /* BaseCoordinator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseCoordinator+Extension.swift"; sourceTree = "<group>"; };
 		DE51919A28199E5E00C5260A /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		DE51919B28199E5E00C5260A /* WatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListViewController.xib; sourceTree = "<group>"; };
 		DE51919E2819A0D600C5260A /* WatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListCoordinator.swift; sourceTree = "<group>"; };
@@ -162,6 +173,7 @@
 				DE755B1F28358D4E00210B9B /* ObjectMapper in Frameworks */,
 				9F94CD919C4A17AA8AA59127 /* (null) in Frameworks */,
 				69DF1BC96D9B7A09F87CB222 /* Pods_Template.framework in Frameworks */,
+				DE3CDC232836DC560071F4D4 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +216,7 @@
 				DE1836D52812F609002F8A35 /* Modules */,
 				DE755B19283582DF00210B9B /* Models */,
 				DE1836E528130142002F8A35 /* Services */,
+				DE43229328385A9500E469B2 /* AppExtension */,
 				DE1836D82812F647002F8A35 /* Common */,
 				DE1836DB2812FB74002F8A35 /* Resources */,
 			);
@@ -323,6 +336,25 @@
 				DED66C782832C3B3003BDCAC /* SignUp */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		DE43228A2838569400E469B2 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */,
+				DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */,
+				DE43228B283856F100E469B2 /* UserDetailsViewController.swift */,
+				DE43228C283856F100E469B2 /* UserDetailsViewController.xib */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		DE43229328385A9500E469B2 /* AppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DE43229428385ABB00E469B2 /* BaseCoordinator+Extension.swift */,
+			);
+			path = AppExtension;
 			sourceTree = "<group>";
 		};
 		DE51919628199C2F00C5260A /* WatchList */ = {
@@ -456,6 +488,7 @@
 		DEBCEA6828340600006674AE /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				DE43228A2838569400E469B2 /* UserDetails */,
 				DEBCEA7128340ACE006674AE /* Cells */,
 				DEBCEA6928340625006674AE /* UsersCoordinator.swift */,
 				DEBCEA6F28340652006674AE /* UsersViewModel.swift */,
@@ -535,6 +568,7 @@
 			name = Template;
 			packageProductDependencies = (
 				DE755B1E28358D4E00210B9B /* ObjectMapper */,
+				DE3CDC222836DC560071F4D4 /* Nuke */,
 			);
 			productName = Template;
 			productReference = DE1836BC2812F45C002F8A35 /* Template.app */;
@@ -566,6 +600,7 @@
 			mainGroup = DE1836B32812F45C002F8A35;
 			packageReferences = (
 				DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				DE3CDC212836DC560071F4D4 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = DE1836BD2812F45C002F8A35 /* Products */;
 			projectDirPath = "";
@@ -587,6 +622,7 @@
 				DE1836CC2812F45D002F8A35 /* LaunchScreen.storyboard in Resources */,
 				DE755B2728358D7100210B9B /* README.md in Resources */,
 				DE1836C92812F45D002F8A35 /* Assets.xcassets in Resources */,
+				DE43228E283856F100E469B2 /* UserDetailsViewController.xib in Resources */,
 				DEBCEA6E2834063D006674AE /* UsersViewController.xib in Resources */,
 				DE755B2528358D7100210B9B /* LICENSE in Resources */,
 				DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */,
@@ -698,6 +734,7 @@
 				DE1836E228130054002F8A35 /* SelfSizingCollectionView.swift in Sources */,
 				DE1836DD2812FD37002F8A35 /* BaseViewController.swift in Sources */,
 				DED66C6B28329CA2003BDCAC /* OnboardCoordinator.swift in Sources */,
+				DE4322922838572000E469B2 /* UserDetailsCoordinator.swift in Sources */,
 				DE51919C28199E5E00C5260A /* WatchListViewController.swift in Sources */,
 				DEBCEA6D2834063D006674AE /* UsersViewController.swift in Sources */,
 				DEB1B1CA2815BC7B00699414 /* String+Ex.swift in Sources */,
@@ -711,6 +748,7 @@
 				DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */,
 				DE5191A72819A4BB00C5260A /* WatchListViewModel.swift in Sources */,
 				DEAE6BC0281310E100C2B793 /* BaseViewModel.swift in Sources */,
+				DE43229528385ABB00E469B2 /* BaseCoordinator+Extension.swift in Sources */,
 				DEB1B1AC2815366500699414 /* LoginViewModel.swift in Sources */,
 				DE755B1B283582FD00210B9B /* UserModel.swift in Sources */,
 				DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */,
@@ -718,10 +756,12 @@
 				DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */,
 				DEBCEA7428340BBC006674AE /* UsersItemViewCell.swift in Sources */,
 				DEAE6BC92813161C00C2B793 /* UIStoryBoard+Ex.swift in Sources */,
+				DE43228D283856F100E469B2 /* UserDetailsViewController.swift in Sources */,
 				DED66C7428329D9A003BDCAC /* OnboardViewController.swift in Sources */,
 				DE1836C02812F45C002F8A35 /* AppDelegate.swift in Sources */,
 				DE5191A92819A54000C5260A /* ProfileViewModel.swift in Sources */,
 				DEAE6BC2281311ED00C2B793 /* MainCoordinator.swift in Sources */,
+				DE4322902838570A00E469B2 /* UserDetailsViewModel.swift in Sources */,
 				DEB1B1C42815B90200699414 /* UINavigation+Ex.swift in Sources */,
 				DEB1B1B82815B41300699414 /* Date+Ex.swift in Sources */,
 				DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */,
@@ -1040,6 +1080,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE3CDC212836DC560071F4D4 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
@@ -1051,6 +1099,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE3CDC222836DC560071F4D4 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE3CDC212836DC560071F4D4 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
 		DE755B1E28358D4E00210B9B /* ObjectMapper */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */;

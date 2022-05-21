@@ -5,11 +5,20 @@
 //  Created by Lam Nguyen on 5/17/22.
 //
 
-import UIKit
+import Foundation
+
+protocol UsersNavigation: AnyObject {
+    func gotoUserDetails(_ user: UserModel)
+}
 
 class UsersViewModel: BaseViewModel {
     
     private let service = ExampleService()
+    private weak var navigation: UsersNavigation!
+    
+    init(navigation: UsersNavigation) {
+        self.navigation = navigation
+    }
     
     var users: [UserModel] = [] {
         didSet {
@@ -36,5 +45,9 @@ class UsersViewModel: BaseViewModel {
             // error for request
             print(error)
         }
+    }
+    
+    func gotoUserDetails(_ user: UserModel) {
+        navigation.gotoUserDetails(user)
     }
 }

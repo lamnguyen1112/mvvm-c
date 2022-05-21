@@ -13,4 +13,8 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    deinit {
+        print("\(String(describing: self)) deinit")
+    }
 }

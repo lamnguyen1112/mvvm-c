@@ -18,12 +18,12 @@ class ExampleService {
             return defaultEndpoint.adding(newHTTPHeaderFields: httpHeaderFields)
         }
     }, plugins: [
-        NetworkLoggerPlugin(configuration: .init(formatter: .init(), output: { (target, array) in
-            if let log = array.first {
-                print("----------------------- cURL ------------------------")
-                print(log)
-            }
-        }, logOptions: .formatRequestAscURL))
+//        NetworkLoggerPlugin(configuration: .init(formatter: .init(), output: { (target, array) in
+//            if let log = array.first {
+//                print("----------------------- cURL ------------------------")
+//                print(log)
+//            }
+//        }, logOptions: .formatRequestAscURL))
     ])
     
     let domain: String = "com.example.helloworld"
@@ -39,14 +39,7 @@ class ExampleService {
             
             switch result {
             case .success(let response):
-                do {
-                    let json = try response.mapJSON()
-                    print("----------------------- RESPONSE ------------------------")
-                    print(json)
-                } catch {
-                    print(error)
-                    errorCallback(error)
-                }
+//                self.showLog(response)
                 
                 if response.statusCode >= 200 && response.statusCode <= 300 {
                     successCallback(response)
@@ -57,6 +50,20 @@ class ExampleService {
             case .failure(let error):
                 failureCallback(error)
             }
+        }
+    }
+    
+    private func showcURLLog() {
+        
+    }
+    
+    private func showLog(_ response: Response) {
+        do {
+            let json = try response.mapJSON()
+            print("----------------------- RESPONSE ------------------------")
+            print(json)
+        } catch {
+            print(error)
         }
     }
 }

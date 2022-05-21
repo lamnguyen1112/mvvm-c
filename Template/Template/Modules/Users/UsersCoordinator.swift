@@ -15,10 +15,19 @@ class UsersCoordinator: BaseCoordinator {
     }
     
     override func start() {
-        let viewModel = UsersViewModel()
+        let viewModel = UsersViewModel(navigation: self)
         let userVC = UsersViewController.instanceFromNibClass()
         userVC.viewModel = viewModel
         navigationController.viewControllers = [userVC]
+        navigationController.delegate = self
     }
     
+}
+
+extension UsersCoordinator: UsersNavigation {
+    func gotoUserDetails(_ user: UserModel) {
+        let coordinator = UserDetailsCoordinator(navigationController: navigationController, user: user)
+        children.append(coordinator)
+        coordinator.start()
+    }
 }
