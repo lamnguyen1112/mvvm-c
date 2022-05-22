@@ -22,7 +22,7 @@
 		DE43228E283856F100E469B2 /* UserDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE43228C283856F100E469B2 /* UserDetailsViewController.xib */; };
 		DE4322902838570A00E469B2 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */; };
 		DE4322922838572000E469B2 /* UserDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */; };
-		DE43229528385ABB00E469B2 /* BaseCoordinator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43229428385ABB00E469B2 /* BaseCoordinator+Extension.swift */; };
+		DE43229528385ABB00E469B2 /* Template+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43229428385ABB00E469B2 /* Template+Ex.swift */; };
 		DE51919C28199E5E00C5260A /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51919A28199E5E00C5260A /* WatchListViewController.swift */; };
 		DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE51919B28199E5E00C5260A /* WatchListViewController.xib */; };
 		DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51919E2819A0D600C5260A /* WatchListCoordinator.swift */; };
@@ -101,7 +101,7 @@
 		DE43228C283856F100E469B2 /* UserDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailsViewController.xib; sourceTree = "<group>"; };
 		DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsCoordinator.swift; sourceTree = "<group>"; };
-		DE43229428385ABB00E469B2 /* BaseCoordinator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseCoordinator+Extension.swift"; sourceTree = "<group>"; };
+		DE43229428385ABB00E469B2 /* Template+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Template+Ex.swift"; sourceTree = "<group>"; };
 		DE51919A28199E5E00C5260A /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		DE51919B28199E5E00C5260A /* WatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListViewController.xib; sourceTree = "<group>"; };
 		DE51919E2819A0D600C5260A /* WatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListCoordinator.swift; sourceTree = "<group>"; };
@@ -352,7 +352,7 @@
 		DE43229328385A9500E469B2 /* AppExtension */ = {
 			isa = PBXGroup;
 			children = (
-				DE43229428385ABB00E469B2 /* BaseCoordinator+Extension.swift */,
+				DE43229428385ABB00E469B2 /* Template+Ex.swift */,
 			);
 			path = AppExtension;
 			sourceTree = "<group>";
@@ -748,7 +748,7 @@
 				DEB1B1BC2815B52D00699414 /* UITableView+Ex.swift in Sources */,
 				DE5191A72819A4BB00C5260A /* WatchListViewModel.swift in Sources */,
 				DEAE6BC0281310E100C2B793 /* BaseViewModel.swift in Sources */,
-				DE43229528385ABB00E469B2 /* BaseCoordinator+Extension.swift in Sources */,
+				DE43229528385ABB00E469B2 /* Template+Ex.swift in Sources */,
 				DEB1B1AC2815366500699414 /* LoginViewModel.swift in Sources */,
 				DE755B1B283582FD00210B9B /* UserModel.swift in Sources */,
 				DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */,

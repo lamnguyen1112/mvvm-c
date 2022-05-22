@@ -53,3 +53,32 @@ extension OnboardCoordinator: OnboardNavigation {
         signUpCoordinator.start()
     }
 }
+
+extension OnboardCoordinator: UINavigationControllerDelegate {
+    func navigationController(_ navigationController: UINavigationController,
+                              didShow viewController: UIViewController, animated: Bool) {
+        // ensure the view controller is popping
+        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from),
+            !navigationController.viewControllers.contains(fromViewController) else {
+            return
+        }
+        
+        // Check type controller to pop, release coordinator
+        if checkViewControllerRelease(fromViewController) {
+            self.children.removeAll()
+        }
+    }
+    
+    private var kindOfViewControllersRelease: [String] {
+        return [String(describing: LoginViewController.self),
+                String(describing: SignUpViewController.self)
+        ]
+    }
+        
+    private func checkViewControllerRelease(_ viewController: UIViewController) -> Bool {
+        let classType = String(describing: type(of: viewController))
+        let isContains = kindOfViewControllersRelease.contains(classType)
+        return isContains
+    }
+}
+

@@ -25,6 +25,7 @@ disabled_rules: # rule identifiers to exclude from running, (suggestion)
   - private_over_fileprivate
   - no_fallthrough_only
   - vertical_parameter_alignment
+  - duplicate_imports
 # some rules are only opt-in (Require)
 opt_in_rules:
   - closure_spacing
@@ -53,9 +54,9 @@ line_length:
   ignores_urls: true
   ignores_function_declarations: true
 # special configuration for rules
-function_parameter_count:
-  warning: 8
-  error: 10
+#function_parameter_count:
+#  warning: 8
+#  error: 10
 # function body length
 function_body_length:
   - 160 # warning

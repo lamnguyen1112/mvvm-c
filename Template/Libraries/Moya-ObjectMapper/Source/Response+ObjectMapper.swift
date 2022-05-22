@@ -47,7 +47,7 @@ public extension Response {
     /// protocol.
     /// If the conversion fails, the signal errors.
     func mapArray<T: ImmutableMappable>(_ type: T.Type) throws -> [T] {
-        guard let array = try mapJSON() as? [[String : Any]] else {
+        guard let array = try mapJSON() as? [[String: Any]] else {
             throw MoyaError.jsonMapping(self)
         }
         return try Mapper<T>().mapArray(JSONArray: array)
