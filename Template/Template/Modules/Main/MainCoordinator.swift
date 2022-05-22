@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class MainCoordinator: BaseCoordinator {
     
@@ -15,6 +16,12 @@ class MainCoordinator: BaseCoordinator {
     
     private func initializeTabbar() {
         let mainVC = MainViewController()
+        
+        // Setup Side Menu
+        let menuVC = MenuViewController.instanceFromNibClass()
+        let menuViewModel = MenuViewModel()
+        menuVC.viewModel = menuViewModel
+        let sideMenuVC = SideMenuController(contentViewController: mainVC, menuViewController: menuVC)
         
         let watchListNavigationController = UINavigationController()
         let watchCoordinator = WatchListCoordinator.init(navigationController: watchListNavigationController)
@@ -49,7 +56,7 @@ class MainCoordinator: BaseCoordinator {
         profileNavigationController.tabBarItem = profileItem
         
         mainVC.viewControllers = [watchListNavigationController, usersNavigationController, profileNavigationController]
-        UIApplication.switchRootViewController(to: mainVC, animated: true)
+        UIApplication.switchRootViewController(to: sideMenuVC, animated: true)
         
         // Add the coordinator into parent's child
         parentCoordinator?.children.append(watchCoordinator)

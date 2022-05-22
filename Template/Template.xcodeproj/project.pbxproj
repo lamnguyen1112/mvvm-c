@@ -23,6 +23,9 @@
 		DE4322902838570A00E469B2 /* UserDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */; };
 		DE4322922838572000E469B2 /* UserDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */; };
 		DE43229528385ABB00E469B2 /* Template+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43229428385ABB00E469B2 /* Template+Ex.swift */; };
+		DE432299283A954900E469B2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE432297283A954900E469B2 /* MenuViewController.swift */; };
+		DE43229A283A954900E469B2 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE432298283A954900E469B2 /* MenuViewController.xib */; };
+		DE43229C283A985200E469B2 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43229B283A985200E469B2 /* MenuViewModel.swift */; };
 		DE51919C28199E5E00C5260A /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51919A28199E5E00C5260A /* WatchListViewController.swift */; };
 		DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE51919B28199E5E00C5260A /* WatchListViewController.xib */; };
 		DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE51919E2819A0D600C5260A /* WatchListCoordinator.swift */; };
@@ -102,6 +105,9 @@
 		DE43228F2838570A00E469B2 /* UserDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewModel.swift; sourceTree = "<group>"; };
 		DE4322912838572000E469B2 /* UserDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsCoordinator.swift; sourceTree = "<group>"; };
 		DE43229428385ABB00E469B2 /* Template+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Template+Ex.swift"; sourceTree = "<group>"; };
+		DE432297283A954900E469B2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DE432298283A954900E469B2 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		DE43229B283A985200E469B2 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		DE51919A28199E5E00C5260A /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		DE51919B28199E5E00C5260A /* WatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListViewController.xib; sourceTree = "<group>"; };
 		DE51919E2819A0D600C5260A /* WatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListCoordinator.swift; sourceTree = "<group>"; };
@@ -250,8 +256,9 @@
 				DED66C6928329B10003BDCAC /* Onboard */,
 				DE1836E728130158002F8A35 /* Auth */,
 				DE1836E628130153002F8A35 /* Main */,
-				DED66C832832CE23003BDCAC /* Market */,
+				DE432296283A952100E469B2 /* Menu */,
 				DE51919628199C2F00C5260A /* WatchList */,
+				DED66C832832CE23003BDCAC /* Market */,
 				DEBCEA6828340600006674AE /* Users */,
 				DE51919728199C4500C5260A /* Trade */,
 				DE51919828199C4D00C5260A /* Community */,
@@ -355,6 +362,16 @@
 				DE43229428385ABB00E469B2 /* Template+Ex.swift */,
 			);
 			path = AppExtension;
+			sourceTree = "<group>";
+		};
+		DE432296283A952100E469B2 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				DE43229B283A985200E469B2 /* MenuViewModel.swift */,
+				DE432297283A954900E469B2 /* MenuViewController.swift */,
+				DE432298283A954900E469B2 /* MenuViewController.xib */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		DE51919628199C2F00C5260A /* WatchList */ = {
@@ -623,6 +640,7 @@
 				DE755B2728358D7100210B9B /* README.md in Resources */,
 				DE1836C92812F45D002F8A35 /* Assets.xcassets in Resources */,
 				DE43228E283856F100E469B2 /* UserDetailsViewController.xib in Resources */,
+				DE43229A283A954900E469B2 /* MenuViewController.xib in Resources */,
 				DEBCEA6E2834063D006674AE /* UsersViewController.xib in Resources */,
 				DE755B2528358D7100210B9B /* LICENSE in Resources */,
 				DE51919D28199E5E00C5260A /* WatchListViewController.xib in Resources */,
@@ -723,6 +741,7 @@
 				DE86479728266BA400A4096B /* ExampleTarget.swift in Sources */,
 				DEB1B1C62815B97400699414 /* Collection+Ex.swift in Sources */,
 				DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */,
+				DE43229C283A985200E469B2 /* MenuViewModel.swift in Sources */,
 				DEB1B1BE2815B5A400699414 /* UIView+Ex.swift in Sources */,
 				DEAE6BC72813157F00C2B793 /* UIViewController+Ex.swift in Sources */,
 				DE5191A12819A21600C5260A /* ProfileCoordinator.swift in Sources */,
@@ -751,6 +770,7 @@
 				DE43229528385ABB00E469B2 /* Template+Ex.swift in Sources */,
 				DEB1B1AC2815366500699414 /* LoginViewModel.swift in Sources */,
 				DE755B1B283582FD00210B9B /* UserModel.swift in Sources */,
+				DE432299283A954900E469B2 /* MenuViewController.swift in Sources */,
 				DEB1B1C02815B6EF00699414 /* DispatchQueue+Ex.swift in Sources */,
 				DEB1B1B62815B15700699414 /* R.generated.swift in Sources */,
 				DEB1B1BA2815B46800699414 /* UIColor+Ex.swift in Sources */,

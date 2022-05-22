@@ -8,6 +8,7 @@ PODS:
   - R.swift (6.1.0):
     - R.swift.Library (~> 5.3.0)
   - R.swift.Library (5.3.0)
+  - SideMenuSwift (2.0.9)
   - SwiftEntryKit (2.0.0)
   - SwiftLint (0.47.1)
 
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - DBDebugToolkit
   - Moya (~> 15.0)
   - R.swift (~> 6.1)
+  - SideMenuSwift
   - SwiftEntryKit (~> 2.0)
   - SwiftLint
 
@@ -25,6 +27,7 @@ SPEC REPOS:
     - Moya
     - R.swift
     - R.swift.Library
+    - SideMenuSwift
     - SwiftEntryKit
     - SwiftLint
 
@@ -34,9 +37,10 @@ SPEC CHECKSUMS:
   Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
   R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SideMenuSwift: 39f1922e225da4aaa8b16591037a929defe960c9
   SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
   SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: e4f31b65cb778e9ed708ab172b9f15e4fef8f41a
+PODFILE CHECKSUM: d318d67ccc624281f1c845bf716103c3347e1fdd
 
 COCOAPODS: 1.11.2

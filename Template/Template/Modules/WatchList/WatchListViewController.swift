@@ -24,6 +24,19 @@ extension WatchListViewController {
 // MARK: - Helper
 extension WatchListViewController {
     func setupUI() {
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
         title = R.string.localizable.watchlistTitle()
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
+    }
+}
+
+// MARK: - Actions
+extension WatchListViewController {
+    @objc private func showMenu() {
+        sideMenuController?.revealMenu(animated: true, completion: nil)
     }
 }
