@@ -44,6 +44,7 @@
 		DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */; };
 		DE86479728266BA400A4096B /* ExampleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479628266BA400A4096B /* ExampleTarget.swift */; };
 		DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */; };
+		DEA467A3283BE0A70002ED52 /* CGFloat+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA467A2283BE0A70002ED52 /* CGFloat+Ex.swift */; };
 		DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BB92813108000C2B793 /* LoginViewController.swift */; };
 		DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAE6BBA2813108000C2B793 /* LoginViewController.xib */; };
 		DEAE6BBE281310B100C2B793 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BBD281310B100C2B793 /* LoginCoordinator.swift */; };
@@ -128,6 +129,7 @@
 		DE822B852816FC0A000DDF86 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		DE86479628266BA400A4096B /* ExampleTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTarget.swift; sourceTree = "<group>"; };
 		DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Coordinate.swift"; sourceTree = "<group>"; };
+		DEA467A2283BE0A70002ED52 /* CGFloat+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ex.swift"; sourceTree = "<group>"; };
 		DEAE6BB92813108000C2B793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEAE6BBA2813108000C2B793 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DEAE6BBD281310B100C2B793 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 				DEB1B1C72815B9E100699414 /* String+Date+Ex.swift */,
 				DEB1B1CD2815BF3100699414 /* Data+Ex.swift */,
 				DEB1B1C92815BC7B00699414 /* String+Ex.swift */,
+				DEA467A2283BE0A70002ED52 /* CGFloat+Ex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -786,6 +789,7 @@
 				DEB1B1B82815B41300699414 /* Date+Ex.swift in Sources */,
 				DE51919F2819A0D600C5260A /* WatchListCoordinator.swift in Sources */,
 				DE755B2628358D7100210B9B /* Response+ObjectMapper.swift in Sources */,
+				DEA467A3283BE0A70002ED52 /* CGFloat+Ex.swift in Sources */,
 				DEAE6BBE281310B100C2B793 /* LoginCoordinator.swift in Sources */,
 				DED66C7B2832C3EB003BDCAC /* SignUpViewController.swift in Sources */,
 				DE1836D72812F638002F8A35 /* Coordinator.swift in Sources */,
