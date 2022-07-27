@@ -44,6 +44,7 @@
 		DE822B502816F2E3000DDF86 /* AppDelegate+Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE822B4F2816F2E3000DDF86 /* AppDelegate+Setting.swift */; };
 		DE86479728266BA400A4096B /* ExampleTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479628266BA400A4096B /* ExampleTarget.swift */; };
 		DE86479928266E2B00A4096B /* AppDelegate+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */; };
+		DE9D3DC8289192CD009DE4A7 /* PopupHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9D3DC7289192CD009DE4A7 /* PopupHelper.swift */; };
 		DEA467A3283BE0A70002ED52 /* CGFloat+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA467A2283BE0A70002ED52 /* CGFloat+Ex.swift */; };
 		DEAE6BBB2813108000C2B793 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE6BB92813108000C2B793 /* LoginViewController.swift */; };
 		DEAE6BBC2813108000C2B793 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEAE6BBA2813108000C2B793 /* LoginViewController.xib */; };
@@ -129,6 +130,7 @@
 		DE822B852816FC0A000DDF86 /* AppStore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppStore.xcconfig; sourceTree = "<group>"; };
 		DE86479628266BA400A4096B /* ExampleTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTarget.swift; sourceTree = "<group>"; };
 		DE86479828266E2B00A4096B /* AppDelegate+Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Coordinate.swift"; sourceTree = "<group>"; };
+		DE9D3DC7289192CD009DE4A7 /* PopupHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupHelper.swift; sourceTree = "<group>"; };
 		DEA467A2283BE0A70002ED52 /* CGFloat+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Ex.swift"; sourceTree = "<group>"; };
 		DEAE6BB92813108000C2B793 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DEAE6BBA2813108000C2B793 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 		DE1836DE2812FDE4002F8A35 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				DE9D3DC7289192CD009DE4A7 /* PopupHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				DEB1B1CE2815BF3100699414 /* Data+Ex.swift in Sources */,
 				DEAE6BC42813126B00C2B793 /* Colors.swift in Sources */,
 				DE1836E02812FFF6002F8A35 /* SelfSizingTableView.swift in Sources */,
+				DE9D3DC8289192CD009DE4A7 /* PopupHelper.swift in Sources */,
 				DED66C7E2832C406003BDCAC /* SignUpViewModel.swift in Sources */,
 				DE1836DA2812F6D1002F8A35 /* AppCoordinator.swift in Sources */,
 				DE1836E228130054002F8A35 /* SelfSizingCollectionView.swift in Sources */,

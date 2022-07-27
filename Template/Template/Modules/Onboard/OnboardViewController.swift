@@ -6,6 +6,7 @@
 //
 
 import UIKit 
+import SwiftUI
 
 class OnboardViewController: BaseViewController {
     
@@ -30,6 +31,10 @@ extension OnboardViewController {
     
     @IBAction private func loginButtonPressed() {
         onboardViewModel.gotoLogin()
+        // Test popup :))
+//        PopupHelper.presentPopup(alertView: BasicAlert(okAction: {
+//            PopupHelper.dismiss()
+//        }))
     }
     
     @IBAction private func signUpButtonPressed() {
