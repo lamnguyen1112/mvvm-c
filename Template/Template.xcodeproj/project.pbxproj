@@ -223,10 +223,9 @@
 			isa = PBXGroup;
 			children = (
 				DE1836D42812F5FA002F8A35 /* App */,
+				DE1CC53228966F450093304C /* Domain */,
 				DE1836D52812F609002F8A35 /* Modules */,
-				DE755B19283582DF00210B9B /* Models */,
-				DE1836E528130142002F8A35 /* Services */,
-				DE43229328385A9500E469B2 /* AppExtension */,
+				DE43229328385A9500E469B2 /* Extension */,
 				DE1836D82812F647002F8A35 /* Common */,
 				DE1836DB2812FB74002F8A35 /* Resources */,
 			);
@@ -350,6 +349,23 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		DE1CC53228966F450093304C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DE1836E528130142002F8A35 /* Services */,
+				DE755B19283582DF00210B9B /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DE1CC53328966F920093304C /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DE755B1A283582FD00210B9B /* UserModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		DE43228A2838569400E469B2 /* UserDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,12 +377,12 @@
 			path = UserDetails;
 			sourceTree = "<group>";
 		};
-		DE43229328385A9500E469B2 /* AppExtension */ = {
+		DE43229328385A9500E469B2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				DE43229428385ABB00E469B2 /* Template+Ex.swift */,
 			);
-			path = AppExtension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		DE432296283A952100E469B2 /* Menu */ = {
@@ -433,7 +449,7 @@
 		DE755B19283582DF00210B9B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DE755B1A283582FD00210B9B /* UserModel.swift */,
+				DE1CC53328966F920093304C /* User */,
 			);
 			path = Models;
 			sourceTree = "<group>";
