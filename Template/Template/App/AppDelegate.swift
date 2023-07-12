@@ -6,17 +6,18 @@
 //
 
 import UIKit
+import PluggableAppDelegate
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
-    var appCoordinator: AppCoordinator?
-    
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        setupAppCoordinator()
-        setupDebugToolKit()
+class AppDelegate: PluggableApplicationDelegate {
+    override var services: [ApplicationService] {
+        return [
+          CoordinatorService()
+        ]
+    }
 
-        return true
+    override init() {
+        super.init()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
     }
 }

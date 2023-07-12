@@ -11,7 +11,7 @@
 * R.swift to manage resource project
 * DebugToolKit support debug
 * SwiftEntryKit to custom dialog
-* Use cocoapods-keys to store secret key
+* Use cocoapods-keys to store secret key (alternative swiftsecretkeys https://github.com/MatheusMBispo/SwiftSecretKeys)
 * Use ObjectMapper to mapping json
 * Swiftlint
 

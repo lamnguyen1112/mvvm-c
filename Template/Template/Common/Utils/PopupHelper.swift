@@ -8,6 +8,7 @@
 import UIKit
 import SwiftEntryKit
 import SwiftUI
+import core
 
 struct AlertContent {
     var title: String?

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import core
 
 class ProfileCoordinator: BaseCoordinator {
     override init(navigationController: UINavigationController = UINavigationController()) {

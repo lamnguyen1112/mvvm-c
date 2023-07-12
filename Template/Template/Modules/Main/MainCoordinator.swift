@@ -6,8 +6,8 @@
 //
 
 import UIKit
-//import SideMenuSwift
 import SideMenu
+import core
 
 class MainCoordinator: BaseCoordinator {
     

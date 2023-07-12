@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import core
 
 class UsersCoordinator: BaseCoordinator {
     
