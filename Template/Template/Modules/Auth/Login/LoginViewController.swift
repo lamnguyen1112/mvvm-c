@@ -31,7 +31,7 @@ extension LoginViewController {
 // MARK: - Helper
 extension LoginViewController {
     private func setupUI() {
-        title = R.string.localizable.loginTitle()
+        title = L10n.Login.title
         navigationController?.isNavigationBarHidden = false
     }
 }

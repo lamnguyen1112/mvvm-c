@@ -16,7 +16,7 @@ class ProfileViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = R.string.localizable.profileTitle()
+        title = L10n.Profile.title
     }
     
     @IBAction func logoutAction(_ sender: Any) {

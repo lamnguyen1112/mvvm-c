@@ -5,6 +5,7 @@
 //  Created by Lam Nguyen on 5/7/22.
 //
 
+import Foundation
 import Moya
 
 public enum ExampleTarget {
@@ -24,7 +25,7 @@ extension ExampleTarget: TargetType {
         }
     }
     
-    public var method: Method {
+    public var method: Moya.Method {
         switch self {
         case .users:
             return .get

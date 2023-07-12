@@ -19,7 +19,7 @@ class SignUpViewController: BaseViewController {
 
 extension SignUpViewController {
     private func setupUI() {
-        title = R.string.localizable.loginTitle()
+        title = L10n.Login.title
         navigationController?.isNavigationBarHidden = false
     }
 }

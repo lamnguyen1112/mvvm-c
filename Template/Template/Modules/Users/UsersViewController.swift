@@ -33,8 +33,7 @@ class UsersViewController: BaseViewController {
 
 extension UsersViewController {
     private func setupUI() {
-        title = R.string.localizable.usersTitle()
-        
+        title = L10n.Users.title
         usersTableView.rowHeight = UITableView.automaticDimension
         usersTableView.dataSource = self
         usersTableView.delegate = self

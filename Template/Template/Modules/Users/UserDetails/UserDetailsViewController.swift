@@ -28,7 +28,7 @@ class UserDetailsViewController: BaseViewController {
 extension UserDetailsViewController {
     
     private func setupUI() {
-        title = R.string.localizable.userdetailsTitle()
+        title = L10n.Userdetails.title
         userNameLbl.text = userDetailsViewModel.user.name
         tabBarController?.tabBar.isHidden = true
     }

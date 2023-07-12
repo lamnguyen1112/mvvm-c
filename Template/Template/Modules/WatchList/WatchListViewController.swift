@@ -28,7 +28,7 @@ extension WatchListViewController {
     }
     
     private func setupNavigationBar() {
-        title = R.string.localizable.watchlistTitle()
+        title = L10n.Watchlist.title
 
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
     }
