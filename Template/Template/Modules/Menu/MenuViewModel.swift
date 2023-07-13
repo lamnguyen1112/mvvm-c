@@ -7,6 +7,4 @@
 
 import UIKit
 
-class MenuViewModel: BaseViewModel {
-
-}
+class MenuViewModel: BaseViewModel {}

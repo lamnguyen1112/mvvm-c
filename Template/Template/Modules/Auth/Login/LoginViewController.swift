@@ -8,31 +8,30 @@
 import UIKit
 
 class LoginViewController: BaseViewController {
-    
-    private var loginViewModel: LoginViewModel {
-        return viewModel as! LoginViewModel
-    }
+  private var loginViewModel: LoginViewModel {
+    viewModel as! LoginViewModel
+  }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        setupUI()
-    }
-    
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+    setupUI()
+  }
 }
 
 // MARK: - Action
+
 extension LoginViewController {
-    @IBAction private func goHomeAction(_ sender: Any) {
-        loginViewModel.gotoHome()
-    }
+  @IBAction private func goHomeAction(_: Any) {
+    loginViewModel.gotoHome()
+  }
 }
 
 // MARK: - Helper
-extension LoginViewController {
-    private func setupUI() {
-        title = L10n.Login.title
-        navigationController?.isNavigationBarHidden = false
-    }
-}
 
+extension LoginViewController {
+  private func setupUI() {
+    title = L10n.Login.title
+    navigationController?.isNavigationBarHidden = false
+  }
+}

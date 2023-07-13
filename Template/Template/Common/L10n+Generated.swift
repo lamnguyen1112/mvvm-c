@@ -20,27 +20,33 @@ internal enum L10n {
       internal static let title = L10n.tr("Localizable", "alert.common.title", fallback: "alert")
     }
   }
+
   internal enum Login {
     /// Login
     internal static let title = L10n.tr("Localizable", "login.title", fallback: "Login")
   }
+
   internal enum Profile {
     /// Profile
     internal static let title = L10n.tr("Localizable", "profile.title", fallback: "Profile")
   }
+
   internal enum Userdetails {
     /// User Details
     internal static let title = L10n.tr("Localizable", "userdetails.title", fallback: "User Details")
   }
+
   internal enum Users {
     /// Users
     internal static let title = L10n.tr("Localizable", "users.title", fallback: "Users")
   }
+
   internal enum Watchlist {
     /// Watch List
     internal static let title = L10n.tr("Localizable", "watchlist.title", fallback: "Watch List")
   }
 }
+
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
 
@@ -57,10 +63,11 @@ extension L10n {
 private final class BundleToken {
   static let bundle: Bundle = {
     #if SWIFT_PACKAGE
-    return Bundle.module
+      return Bundle.module
     #else
-    return Bundle(for: BundleToken.self)
+      return Bundle(for: BundleToken.self)
     #endif
   }()
 }
+
 // swiftlint:enable convenience_type

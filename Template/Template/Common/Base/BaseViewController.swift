@@ -8,34 +8,35 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-    // MARK: - Properties
-    var viewModel: BaseViewModel?
-    
-    private var isViewWillAppearAtFirst: Bool = true
-    private var isViewDidAppearAtFirst: Bool = true
-    
-    open override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-    }
+  // MARK: - Properties
 
-    override open func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+  var viewModel: BaseViewModel?
 
-        self.viewWillAppearAtFirst(self.isViewWillAppearAtFirst, animated: animated)
-        self.isViewWillAppearAtFirst = false
-    }
+  private var isViewWillAppearAtFirst: Bool = true
+  private var isViewDidAppearAtFirst: Bool = true
 
-    override open func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+  override open func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+  }
 
-        self.viewDidAppearAtFirst(self.isViewDidAppearAtFirst, animated: animated)
-        self.isViewDidAppearAtFirst = false
-    }
+  override open func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
 
-    open func viewWillAppearAtFirst(_ atFirst: Bool, animated: Bool) { }
-    open func viewDidAppearAtFirst(_ atFirst: Bool, animated: Bool) { }
-    
-    deinit {
-        print("\(String(describing: self)) deinit")
-    }
+    viewWillAppearAtFirst(isViewWillAppearAtFirst, animated: animated)
+    isViewWillAppearAtFirst = false
+  }
+
+  override open func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+
+    viewDidAppearAtFirst(isViewDidAppearAtFirst, animated: animated)
+    isViewDidAppearAtFirst = false
+  }
+
+  open func viewWillAppearAtFirst(_: Bool, animated _: Bool) {}
+  open func viewDidAppearAtFirst(_: Bool, animated _: Bool) {}
+
+  deinit {
+    print("\(String(describing: self)) deinit")
+  }
 }

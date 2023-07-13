@@ -5,16 +5,16 @@
 //  Created by Lazyman on 7/12/23.
 //
 
-import UIKit
 import PluggableAppDelegate
+import UIKit
 #if DEBUG
   import Atlantis
 #endif
 
 class InterceptService: NSObject, ApplicationService {
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+  func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
     #if DEBUG
-        Atlantis.start()
+      Atlantis.start()
     #endif
     return true
   }

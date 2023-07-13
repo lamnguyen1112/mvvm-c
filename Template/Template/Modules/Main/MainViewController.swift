@@ -8,13 +8,12 @@
 import UIKit
 
 class MainViewController: UITabBarController {
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+  }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-    
-    deinit {
-        print("\(String(describing: self)) deinit")
-    }
+  deinit {
+    print("\(String(describing: self)) deinit")
+  }
 }

@@ -7,6 +7,4 @@
 
 import UIKit
 
-class SignUpViewModel: BaseViewModel {
-
-}
+class SignUpViewModel: BaseViewModel {}

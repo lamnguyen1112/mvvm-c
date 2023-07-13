@@ -8,8 +8,7 @@
 import UIKit
 
 class BaseViewModel: NSObject {
-    
-    deinit {
-        print("\(String(describing: self)) deinit")
-    }
+  deinit {
+    print("\(String(describing: self)) deinit")
+  }
 }

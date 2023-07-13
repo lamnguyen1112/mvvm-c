@@ -9,19 +9,18 @@ import UIKit
 
 // Define navigate to
 protocol LoginNavigation: AnyObject {
-    func gotoHome()
-    func gotoRegiter()
+  func gotoHome()
+  func gotoRegiter()
 }
 
 class LoginViewModel: BaseViewModel {
-    
-    private weak var navigation: LoginNavigation!
-    
-    init(navigation: LoginNavigation) {
-        self.navigation = navigation
-    }
-    
-    func gotoHome() {
-        navigation.gotoHome()
-    }
+  private weak var navigation: LoginNavigation!
+
+  init(navigation: LoginNavigation) {
+    self.navigation = navigation
+  }
+
+  func gotoHome() {
+    navigation.gotoHome()
+  }
 }

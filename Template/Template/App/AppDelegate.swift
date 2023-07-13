@@ -5,19 +5,19 @@
 //  Created by Lam Nguyen on 4/22/22.
 //
 
-import UIKit
 import PluggableAppDelegate
+import UIKit
 
 @main
 class AppDelegate: PluggableApplicationDelegate {
-    override var services: [ApplicationService] {
-        return [
-          CoordinatorService()
-        ]
-    }
+  override var services: [ApplicationService] {
+    [
+      CoordinatorService(),
+    ]
+  }
 
-    override init() {
-        super.init()
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-    }
+  override init() {
+    super.init()
+    window = UIWindow(frame: UIScreen.main.bounds)
+  }
 }

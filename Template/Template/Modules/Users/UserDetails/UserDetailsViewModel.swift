@@ -8,9 +8,9 @@
 import Foundation
 
 class UserDetailsViewModel: BaseViewModel {
-    var user: UserModel
-    
-    init(_ user: UserModel) {
-        self.user = user
-    }
+  var user: UserModel
+
+  init(_ user: UserModel) {
+    self.user = user
+  }
 }

@@ -7,6 +7,4 @@
 
 import UIKit
 
-class WatchListViewModel: BaseViewModel {
-
-}
+class WatchListViewModel: BaseViewModel {}

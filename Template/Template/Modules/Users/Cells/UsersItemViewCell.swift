@@ -8,16 +8,14 @@
 import UIKit
 
 class UsersItemViewCell: UITableViewCell {
-    
-    @IBOutlet private weak var userNameLbl: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    func setUser(_ user: UserModel) {
-        userNameLbl.text = user.name
-    }
-    
+  @IBOutlet private weak var userNameLbl: UILabel!
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
+  }
+
+  func setUser(_ user: UserModel) {
+    userNameLbl.text = user.name
+  }
 }

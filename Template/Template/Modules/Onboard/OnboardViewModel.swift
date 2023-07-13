@@ -8,22 +8,22 @@
 import UIKit
 
 protocol OnboardNavigation: AnyObject {
-    func gotoLogin()
-    func gotoSignUp()
+  func gotoLogin()
+  func gotoSignUp()
 }
 
 class OnboardViewModel: BaseViewModel {
-    private weak var navigation: OnboardNavigation!
-    
-    init(_ navigation: OnboardNavigation) {
-        self.navigation = navigation
-    }
-    
-    func gotoLogin() {
-        navigation.gotoLogin()
-    }
-    
-    func gotoHome() {
-        navigation.gotoSignUp()
-    }
+  private weak var navigation: OnboardNavigation!
+
+  init(_ navigation: OnboardNavigation) {
+    self.navigation = navigation
+  }
+
+  func gotoLogin() {
+    navigation.gotoLogin()
+  }
+
+  func gotoHome() {
+    navigation.gotoSignUp()
+  }
 }

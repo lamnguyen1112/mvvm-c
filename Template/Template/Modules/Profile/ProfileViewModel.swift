@@ -8,17 +8,17 @@
 import Foundation
 
 protocol ProfileNavigation: AnyObject {
-    func logout()
+  func logout()
 }
 
 class ProfileViewModel: BaseViewModel {
-    private weak var navigation: ProfileNavigation!
-    
-    init(navigation: ProfileNavigation) {
-        self.navigation = navigation
-    }
-    
-    func logout() {
-        navigation.logout()
-    }
+  private weak var navigation: ProfileNavigation!
+
+  init(navigation: ProfileNavigation) {
+    self.navigation = navigation
+  }
+
+  func logout() {
+    navigation.logout()
+  }
 }

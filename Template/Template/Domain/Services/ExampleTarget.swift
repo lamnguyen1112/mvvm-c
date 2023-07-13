@@ -9,40 +9,40 @@ import Foundation
 import Moya
 
 public enum ExampleTarget {
-    case users
-    case details
+  case users
+  case details
 }
 
 extension ExampleTarget: TargetType {
-    public var baseURL: URL {
-        return URL(string: "https://jsonplaceholder.typicode.com")!
+  public var baseURL: URL {
+    URL(string: "https://jsonplaceholder.typicode.com")!
+  }
+
+  public var path: String {
+    switch self {
+    case .users: return "/users"
+    case .details: return "/details"
     }
-    
-    public var path: String {
-        switch self {
-        case .users: return "/users"
-        case .details: return "/details"
-        }
+  }
+
+  public var method: Moya.Method {
+    switch self {
+    case .users:
+      return .get
+    default:
+      return .post
     }
-    
-    public var method: Moya.Method {
-        switch self {
-        case .users:
-            return .get
-        default:
-            return .post
-        }
-    }
-    
-    public var task: Task {
-        return .requestPlain
-    }
-    
-    public var headers: [String: String]? {
-        return ["Content-Type": "application/json"]
-    }
-    
-    public var validationType: ValidationType {
-        return .successCodes
-    }
+  }
+
+  public var task: Task {
+    .requestPlain
+  }
+
+  public var headers: [String: String]? {
+    ["Content-Type": "application/json"]
+  }
+
+  public var validationType: ValidationType {
+    .successCodes
+  }
 }

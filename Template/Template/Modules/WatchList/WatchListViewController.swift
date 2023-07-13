@@ -8,35 +8,35 @@
 import UIKit
 
 class WatchListViewController: BaseViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        setupUI()
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+    setupUI()
+  }
 }
 
 // MARK: - Action
-extension WatchListViewController {
-    
-}
+
+extension WatchListViewController {}
 
 // MARK: - Helper
-extension WatchListViewController {
-    func setupUI() {
-        setupNavigationBar()
-    }
-    
-    private func setupNavigationBar() {
-        title = L10n.Watchlist.title
 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
-    }
+extension WatchListViewController {
+  func setupUI() {
+    setupNavigationBar()
+  }
+
+  private func setupNavigationBar() {
+    title = L10n.Watchlist.title
+
+    navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(showMenu))
+  }
 }
 
 // MARK: - Actions
+
 extension WatchListViewController {
-    @objc private func showMenu() {
-        sideMenuController?.revealMenu(animated: true, completion: nil)
-    }
+  @objc private func showMenu() {
+    sideMenuController?.revealMenu(animated: true, completion: nil)
+  }
 }

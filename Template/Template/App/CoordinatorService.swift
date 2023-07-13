@@ -5,13 +5,13 @@
 //  Created by Lazyman on 7/12/23.
 //
 
-import UIKit
 import PluggableAppDelegate
+import UIKit
 
 class CoordinatorService: NSObject, ApplicationService {
   var appCoordinator: AppCoordinator?
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+  func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
     setupAppCoordinator()
     return true
   }
@@ -19,9 +19,9 @@ class CoordinatorService: NSObject, ApplicationService {
 
 extension CoordinatorService {
   func setupAppCoordinator() {
-      appCoordinator = AppCoordinator(window!)
-      appCoordinator?.start()
+    appCoordinator = AppCoordinator(window!)
+    appCoordinator?.start()
 
-      window?.makeKeyAndVisible()
+    window?.makeKeyAndVisible()
   }
 }

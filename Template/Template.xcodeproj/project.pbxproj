@@ -154,6 +154,7 @@
 		E0C5E5CD2A5E81E2002E1BE1 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
 		E0CBFFAB2A5F83370095718A /* sskeys.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = sskeys.yml; sourceTree = SOURCE_ROOT; };
 		E0CBFFB32A5F8E160095718A /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
+		E0CBFFB52A5F8E9F0095718A /* project.swiftformat.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = project.swiftformat.yml; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -507,6 +508,7 @@
 				E0C5E5CB2A5E81E2002E1BE1 /* README.md */,
 				E0C5E5CD2A5E81E2002E1BE1 /* swiftgen.yml */,
 				E0CBFFAB2A5F83370095718A /* sskeys.yml */,
+				E0CBFFB52A5F8E9F0095718A /* project.swiftformat.yml */,
 				E0A74E482A5E8BAA00C91578 /* Makefile */,
 			);
 			name = Deployment;
