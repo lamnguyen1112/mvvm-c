@@ -80,6 +80,7 @@
 		E0C5E5C32A5E64EC002E1BE1 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E0C5E5C22A5E64EC002E1BE1 /* CombineMoya */; };
 		E0C5E5C52A5E64EC002E1BE1 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E0C5E5C42A5E64EC002E1BE1 /* Moya */; };
 		E0C5E5C82A5E655E002E1BE1 /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = E0C5E5C72A5E655E002E1BE1 /* SideMenu */; };
+		E0CBFFB42A5F8E160095718A /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CBFFB32A5F8E160095718A /* SecretKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +152,8 @@
 		E0A74E4B2A5E8C1300C91578 /* AppColors+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppColors+Generated.swift"; sourceTree = "<group>"; };
 		E0C5E5CB2A5E81E2002E1BE1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		E0C5E5CD2A5E81E2002E1BE1 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		E0CBFFAB2A5F83370095718A /* sskeys.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = sskeys.yml; sourceTree = SOURCE_ROOT; };
+		E0CBFFB32A5F8E160095718A /* SecretKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +200,9 @@
 		DE1836BE2812F45C002F8A35 /* Template */ = {
 			isa = PBXGroup;
 			children = (
-				E0C5E5CA2A5E81C9002E1BE1 /* Deployment */,
 				DE1836D42812F5FA002F8A35 /* App */,
+				DE822B822816FB2E000DDF86 /* Configures */,
+				E0C5E5CA2A5E81C9002E1BE1 /* Deployment */,
 				DE1CC53228966F450093304C /* Domain */,
 				DE1836D52812F609002F8A35 /* Modules */,
 				DE43229328385A9500E469B2 /* Extension */,
@@ -246,6 +250,7 @@
 		DE1836D82812F647002F8A35 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E0CBFFB32A5F8E160095718A /* SecretKeys.swift */,
 				E0A74E4B2A5E8C1300C91578 /* AppColors+Generated.swift */,
 				E0A74E492A5E8C1300C91578 /* Assets+Generated.swift */,
 				E0A74E4A2A5E8C1300C91578 /* L10n+Generated.swift */,
@@ -261,7 +266,6 @@
 			isa = PBXGroup;
 			children = (
 				DE5191AC2819AA3D00C5260A /* Localization */,
-				DE822B822816FB2E000DDF86 /* Configures */,
 				DED66C812832CDE4003BDCAC /* Colors.xcassets */,
 				DE1836C82812F45D002F8A35 /* Assets.xcassets */,
 				DE1836CA2812F45D002F8A35 /* LaunchScreen.storyboard */,
@@ -502,6 +506,7 @@
 			children = (
 				E0C5E5CB2A5E81E2002E1BE1 /* README.md */,
 				E0C5E5CD2A5E81E2002E1BE1 /* swiftgen.yml */,
+				E0CBFFAB2A5F83370095718A /* sskeys.yml */,
 				E0A74E482A5E8BAA00C91578 /* Makefile */,
 			);
 			name = Deployment;
@@ -578,6 +583,7 @@
 				E0A518242A5F065D0065CC53 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 				E0A5182B2A5F07530065CC53 /* XCRemoteSwiftPackageReference "atlantis" */,
 				E0A5182E2A5F08290065CC53 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E0CBFFAC2A5F87040095718A /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = DE1836BD2812F45C002F8A35 /* Products */;
 			projectDirPath = "";
@@ -637,6 +643,7 @@
 				DEBCEA7028340652006674AE /* UsersViewModel.swift in Sources */,
 				DED66C7128329CDF003BDCAC /* OnboardViewModel.swift in Sources */,
 				DE755B182835811000210B9B /* ExampleService.swift in Sources */,
+				E0CBFFB42A5F8E160095718A /* SecretKeys.swift in Sources */,
 				DE5191A72819A4BB00C5260A /* WatchListViewModel.swift in Sources */,
 				DEAE6BC0281310E100C2B793 /* BaseViewModel.swift in Sources */,
 				DE43229528385ABB00E469B2 /* Template+Ex.swift in Sources */,
@@ -1060,6 +1067,14 @@
 			requirement = {
 				kind = exactVersion;
 				version = 2.0.9;
+			};
+		};
+		E0CBFFAC2A5F87040095718A /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.52.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
