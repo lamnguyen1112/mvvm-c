@@ -208,15 +208,6 @@
       }
     },
     {
-      "identity" : "xcoordinator",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/QuickBirdEng/XCoordinator",
-      "state" : {
-        "revision" : "00b066139ed0bf2f68549a7d87434ed36dfa6dea",
-        "version" : "2.2.1"
-      }
-    },
-    {
       "identity" : "yams",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jpsim/Yams.git",

@@ -1,12 +1,14 @@
 #Libraries using in project:
 
-# Update template: because R.swift not good when build, I change to using Swiftgen
-# And to easy in coordinator manager I change to using XCoordinator
-# I will refactor project, and dont use Cocoapod, change project dependencies to SPM
-# To manage scretkey I change to use SwiftScretKeys
-# I will intergrate others tools and refactor Appdeletate using Plugable to lightweith AppDelegate
-# This will take more times
-# Because Internet not good, I use make file to generate swiftgen file
+### Update template: because R.swift not good when build, I change to using Swiftgen-->
+### And to easy in coordinator manager I change to using XCoordinator 
+### (after research its not flexible when change and remove cooridnator then I dont intergrate it, I will remove XCoordinator Packages )
+### I will refactor project, and dont use Cocoapod, change project dependencies to SPM
+### To manage scretkey I change to use SwiftScretKeys
+### I will intergrate others tools and refactor Appdeletate using Plugable to lightweith AppDelegate
+### This will take more times
+### Because Internet not good, I use make file to generate swiftgen file
+### Packages Core naming need refactor
 
 * R.swift to manage resource project
 * DebugToolKit support debug

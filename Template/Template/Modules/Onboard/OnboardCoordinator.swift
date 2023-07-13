@@ -8,6 +8,11 @@
 import core
 import UIKit
 
+protocol OnboardNavigation: AnyObject {
+  func gotoLogin()
+  func gotoSignUp()
+}
+
 class OnboardCoordinator: BaseCoordinator {
   private var window: UIWindow
 

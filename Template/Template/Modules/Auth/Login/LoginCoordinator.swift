@@ -8,6 +8,12 @@
 import core
 import UIKit
 
+// Define navigate to
+protocol LoginNavigation: AnyObject {
+  func gotoHome()
+  func gotoRegiter()
+}
+
 class LoginCoordinator: BaseCoordinator {
   override func start() {
     gotoLoginPage()

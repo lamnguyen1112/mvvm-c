@@ -5,12 +5,7 @@
 //  Created by Lam Nguyen on 5/16/22.
 //
 
-import UIKit
-
-protocol OnboardNavigation: AnyObject {
-  func gotoLogin()
-  func gotoSignUp()
-}
+import Foundation
 
 class OnboardViewModel: BaseViewModel {
   private weak var navigation: OnboardNavigation!
