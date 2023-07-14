@@ -5,8 +5,8 @@
 //  Created by Lam Nguyen on 5/17/22.
 //
 
-import core
 import UIKit
+import UIKitExt
 
 class UsersCoordinator: BaseCoordinator {
   override init(navigationController: UINavigationController = UINavigationController()) {

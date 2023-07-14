@@ -5,8 +5,8 @@
 //  Created by Lam Nguyen on 5/21/22.
 //
 
-import core
 import UIKit
+import UIKitExt
 
 class UserDetailsCoordinator: BaseCoordinator {
   private var user: UserModel

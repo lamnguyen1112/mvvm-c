@@ -5,9 +5,9 @@
 //  Created by Lam Nguyen on 4/22/22.
 //
 
-import core
 import SideMenu
 import UIKit
+import UIKitExt
 
 class MainCoordinator: BaseCoordinator {
   override func start() {

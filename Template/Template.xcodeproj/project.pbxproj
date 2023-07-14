@@ -64,8 +64,11 @@
 		DED66C7E2832C406003BDCAC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7D2832C406003BDCAC /* SignUpViewModel.swift */; };
 		DED66C802832C41C003BDCAC /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7F2832C41C003BDCAC /* SignUpCoordinator.swift */; };
 		DED66C822832CDE4003BDCAC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED66C812832CDE4003BDCAC /* Colors.xcassets */; };
+		E07276A42A60EBA0006DF498 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A32A60EBA0006DF498 /* Extensions */; };
+		E07276A62A60EBA0006DF498 /* FoundationExt in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A52A60EBA0006DF498 /* FoundationExt */; };
+		E07276A82A60EBA0006DF498 /* RxSwiftExtPlus in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A72A60EBA0006DF498 /* RxSwiftExtPlus */; };
+		E07276AA2A60EBA0006DF498 /* UIKitExt in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A92A60EBA0006DF498 /* UIKitExt */; };
 		E0A5181A2A5EF3900065CC53 /* CoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A518192A5EF3900065CC53 /* CoordinatorService.swift */; };
-		E0A5181D2A5EFF390065CC53 /* core in Frameworks */ = {isa = PBXBuildFile; productRef = E0A5181C2A5EFF390065CC53 /* core */; };
 		E0A518262A5F065D0065CC53 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = E0A518252A5F065D0065CC53 /* OHHTTPStubs */; };
 		E0A518282A5F065D0065CC53 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0A518272A5F065D0065CC53 /* OHHTTPStubsSwift */; };
 		E0A5182A2A5F06960065CC53 /* InterceptService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A518292A5F06960065CC53 /* InterceptService.swift */; };
@@ -161,18 +164,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07276A62A60EBA0006DF498 /* FoundationExt in Frameworks */,
 				E0A518282A5F065D0065CC53 /* OHHTTPStubsSwift in Frameworks */,
 				E0A518302A5F08290065CC53 /* SnapKit in Frameworks */,
-				E0A5181D2A5EFF390065CC53 /* core in Frameworks */,
 				E0C5E5C02A5E646F002E1BE1 /* SwiftEntryKit in Frameworks */,
 				E0A5182D2A5F07530065CC53 /* Atlantis in Frameworks */,
 				DE755B1F28358D4E00210B9B /* ObjectMapper in Frameworks */,
+				E07276A82A60EBA0006DF498 /* RxSwiftExtPlus in Frameworks */,
 				E0A74E532A5E9E5700C91578 /* PluggableAppDelegate in Frameworks */,
+				E07276A42A60EBA0006DF498 /* Extensions in Frameworks */,
 				E0C5E5C52A5E64EC002E1BE1 /* Moya in Frameworks */,
 				E0C5E5C82A5E655E002E1BE1 /* SideMenu in Frameworks */,
 				E0A518262A5F065D0065CC53 /* OHHTTPStubs in Frameworks */,
 				E0C5E5C32A5E64EC002E1BE1 /* CombineMoya in Frameworks */,
 				DE3CDC232836DC560071F4D4 /* Nuke in Frameworks */,
+				E07276AA2A60EBA0006DF498 /* UIKitExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,11 +542,14 @@
 				E0C5E5C42A5E64EC002E1BE1 /* Moya */,
 				E0C5E5C72A5E655E002E1BE1 /* SideMenu */,
 				E0A74E522A5E9E5700C91578 /* PluggableAppDelegate */,
-				E0A5181C2A5EFF390065CC53 /* core */,
 				E0A518252A5F065D0065CC53 /* OHHTTPStubs */,
 				E0A518272A5F065D0065CC53 /* OHHTTPStubsSwift */,
 				E0A5182C2A5F07530065CC53 /* Atlantis */,
 				E0A5182F2A5F08290065CC53 /* SnapKit */,
+				E07276A32A60EBA0006DF498 /* Extensions */,
+				E07276A52A60EBA0006DF498 /* FoundationExt */,
+				E07276A72A60EBA0006DF498 /* RxSwiftExtPlus */,
+				E07276A92A60EBA0006DF498 /* UIKitExt */,
 			);
 			productName = Template;
 			productReference = DE1836BC2812F45C002F8A35 /* Template.app */;
@@ -577,11 +586,11 @@
 				E0C5E5C12A5E64EC002E1BE1 /* XCRemoteSwiftPackageReference "Moya" */,
 				E0C5E5C62A5E655E002E1BE1 /* XCRemoteSwiftPackageReference "SideMenu" */,
 				E0A74E512A5E9E5700C91578 /* XCRemoteSwiftPackageReference "PluggableAppDelegate" */,
-				E0A5181B2A5EFF390065CC53 /* XCRemoteSwiftPackageReference "core" */,
 				E0A518242A5F065D0065CC53 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 				E0A5182B2A5F07530065CC53 /* XCRemoteSwiftPackageReference "atlantis" */,
 				E0A5182E2A5F08290065CC53 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E0CBFFAC2A5F87040095718A /* XCRemoteSwiftPackageReference "SwiftLint" */,
+				E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */,
 			);
 			productRefGroup = DE1836BD2812F45C002F8A35 /* Products */;
 			projectDirPath = "";
@@ -995,7 +1004,7 @@
 				kind = branch;
 			};
 		};
-		E0A5181B2A5EFF390065CC53 /* XCRemoteSwiftPackageReference "core" */ = {
+		E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/lamnguyen1112/core.git";
 			requirement = {
@@ -1080,10 +1089,25 @@
 			package = DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
 		};
-		E0A5181C2A5EFF390065CC53 /* core */ = {
+		E07276A32A60EBA0006DF498 /* Extensions */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E0A5181B2A5EFF390065CC53 /* XCRemoteSwiftPackageReference "core" */;
-			productName = core;
+			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
+			productName = Extensions;
+		};
+		E07276A52A60EBA0006DF498 /* FoundationExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
+			productName = FoundationExt;
+		};
+		E07276A72A60EBA0006DF498 /* RxSwiftExtPlus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
+			productName = RxSwiftExtPlus;
+		};
+		E07276A92A60EBA0006DF498 /* UIKitExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
+			productName = UIKitExt;
 		};
 		E0A518252A5F065D0065CC53 /* OHHTTPStubs */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -5,8 +5,8 @@
 //  Created by Lam Nguyen on 4/22/22.
 //
 
-import core
 import UIKit
+import UIKitExt
 
 // Define navigate to
 protocol LoginNavigation: AnyObject {

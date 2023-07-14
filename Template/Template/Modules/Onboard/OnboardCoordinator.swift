@@ -5,8 +5,8 @@
 //  Created by Lam Nguyen on 5/16/22.
 //
 
-import core
 import UIKit
+import UIKitExt
 
 protocol OnboardNavigation: AnyObject {
   func gotoLogin()

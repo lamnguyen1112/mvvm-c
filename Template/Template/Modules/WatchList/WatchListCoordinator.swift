@@ -5,8 +5,8 @@
 //  Created by Lam Nguyen on 4/27/22.
 //
 
-import core
 import UIKit
+import UIKitExt
 
 class WatchListCoordinator: BaseCoordinator {
   override init(navigationController: UINavigationController = UINavigationController()) {
