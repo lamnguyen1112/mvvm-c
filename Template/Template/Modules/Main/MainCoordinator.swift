@@ -7,7 +7,7 @@
 
 import SideMenu
 import UIKit
-import UIKitExt
+import Extensions
 
 class MainCoordinator: BaseCoordinator {
   override func start() {

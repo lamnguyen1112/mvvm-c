@@ -37,21 +37,21 @@
       }
     },
     {
-      "identity" : "core",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/lamnguyen1112/core.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "c667f8847722aa302f30329d1150f6630b5a0266"
-      }
-    },
-    {
       "identity" : "cryptoswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
       "state" : {
         "revision" : "32f641cf24fc7abc1c591a2025e9f2f572648b0f",
         "version" : "1.7.2"
+      }
+    },
+    {
+      "identity" : "extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lamnguyen1112/extensions.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b4f508d074904688aa88de3b7104e47592a33031"
       }
     },
     {

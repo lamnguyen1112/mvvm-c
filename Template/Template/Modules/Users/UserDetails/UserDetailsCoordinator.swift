@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKitExt
+import Extensions
 
 class UserDetailsCoordinator: BaseCoordinator {
   private var user: UserModel

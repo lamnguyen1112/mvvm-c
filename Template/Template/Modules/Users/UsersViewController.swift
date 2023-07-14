@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKitExt
+import Extensions
 
 class UsersViewController: BaseViewController {
   // MARK: - View Properties

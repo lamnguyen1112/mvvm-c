@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKitExt
+import Extensions
 
 // Define navigate to
 protocol LoginNavigation: AnyObject {

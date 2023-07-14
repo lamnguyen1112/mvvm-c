@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKitExt
+import Extensions
 
 class SignUpCoordinator: BaseCoordinator {
   override func start() {

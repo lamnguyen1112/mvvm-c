@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKitExt
+import Extensions
 
 protocol OnboardNavigation: AnyObject {
   func gotoLogin()

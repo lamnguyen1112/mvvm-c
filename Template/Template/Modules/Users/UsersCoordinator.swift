@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import UIKitExt
+import Extensions
 
 class UsersCoordinator: BaseCoordinator {
   override init(navigationController: UINavigationController = UINavigationController()) {

@@ -64,10 +64,8 @@
 		DED66C7E2832C406003BDCAC /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7D2832C406003BDCAC /* SignUpViewModel.swift */; };
 		DED66C802832C41C003BDCAC /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED66C7F2832C41C003BDCAC /* SignUpCoordinator.swift */; };
 		DED66C822832CDE4003BDCAC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED66C812832CDE4003BDCAC /* Colors.xcassets */; };
-		E07276A42A60EBA0006DF498 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A32A60EBA0006DF498 /* Extensions */; };
-		E07276A62A60EBA0006DF498 /* FoundationExt in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A52A60EBA0006DF498 /* FoundationExt */; };
-		E07276A82A60EBA0006DF498 /* RxSwiftExtPlus in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A72A60EBA0006DF498 /* RxSwiftExtPlus */; };
-		E07276AA2A60EBA0006DF498 /* UIKitExt in Frameworks */ = {isa = PBXBuildFile; productRef = E07276A92A60EBA0006DF498 /* UIKitExt */; };
+		E0356C002A6142DC005A937C /* ExtensionRx in Frameworks */ = {isa = PBXBuildFile; productRef = E0356BFF2A6142DC005A937C /* ExtensionRx */; };
+		E0356C022A6142DC005A937C /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = E0356C012A6142DC005A937C /* Extensions */; };
 		E0A5181A2A5EF3900065CC53 /* CoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A518192A5EF3900065CC53 /* CoordinatorService.swift */; };
 		E0A518262A5F065D0065CC53 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = E0A518252A5F065D0065CC53 /* OHHTTPStubs */; };
 		E0A518282A5F065D0065CC53 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E0A518272A5F065D0065CC53 /* OHHTTPStubsSwift */; };
@@ -164,21 +162,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07276A62A60EBA0006DF498 /* FoundationExt in Frameworks */,
 				E0A518282A5F065D0065CC53 /* OHHTTPStubsSwift in Frameworks */,
+				E0356C022A6142DC005A937C /* Extensions in Frameworks */,
 				E0A518302A5F08290065CC53 /* SnapKit in Frameworks */,
 				E0C5E5C02A5E646F002E1BE1 /* SwiftEntryKit in Frameworks */,
 				E0A5182D2A5F07530065CC53 /* Atlantis in Frameworks */,
 				DE755B1F28358D4E00210B9B /* ObjectMapper in Frameworks */,
-				E07276A82A60EBA0006DF498 /* RxSwiftExtPlus in Frameworks */,
 				E0A74E532A5E9E5700C91578 /* PluggableAppDelegate in Frameworks */,
-				E07276A42A60EBA0006DF498 /* Extensions in Frameworks */,
+				E0356C002A6142DC005A937C /* ExtensionRx in Frameworks */,
 				E0C5E5C52A5E64EC002E1BE1 /* Moya in Frameworks */,
 				E0C5E5C82A5E655E002E1BE1 /* SideMenu in Frameworks */,
 				E0A518262A5F065D0065CC53 /* OHHTTPStubs in Frameworks */,
 				E0C5E5C32A5E64EC002E1BE1 /* CombineMoya in Frameworks */,
 				DE3CDC232836DC560071F4D4 /* Nuke in Frameworks */,
-				E07276AA2A60EBA0006DF498 /* UIKitExt in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,10 +542,8 @@
 				E0A518272A5F065D0065CC53 /* OHHTTPStubsSwift */,
 				E0A5182C2A5F07530065CC53 /* Atlantis */,
 				E0A5182F2A5F08290065CC53 /* SnapKit */,
-				E07276A32A60EBA0006DF498 /* Extensions */,
-				E07276A52A60EBA0006DF498 /* FoundationExt */,
-				E07276A72A60EBA0006DF498 /* RxSwiftExtPlus */,
-				E07276A92A60EBA0006DF498 /* UIKitExt */,
+				E0356BFF2A6142DC005A937C /* ExtensionRx */,
+				E0356C012A6142DC005A937C /* Extensions */,
 			);
 			productName = Template;
 			productReference = DE1836BC2812F45C002F8A35 /* Template.app */;
@@ -590,7 +584,7 @@
 				E0A5182B2A5F07530065CC53 /* XCRemoteSwiftPackageReference "atlantis" */,
 				E0A5182E2A5F08290065CC53 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E0CBFFAC2A5F87040095718A /* XCRemoteSwiftPackageReference "SwiftLint" */,
-				E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */,
+				E0356BFE2A6142DC005A937C /* XCRemoteSwiftPackageReference "extensions" */,
 			);
 			productRefGroup = DE1836BD2812F45C002F8A35 /* Products */;
 			projectDirPath = "";
@@ -1004,9 +998,9 @@
 				kind = branch;
 			};
 		};
-		E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */ = {
+		E0356BFE2A6142DC005A937C /* XCRemoteSwiftPackageReference "extensions" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lamnguyen1112/core.git";
+			repositoryURL = "https://github.com/lamnguyen1112/extensions.git";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -1089,25 +1083,15 @@
 			package = DE755B1D28358D4E00210B9B /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
 		};
-		E07276A32A60EBA0006DF498 /* Extensions */ = {
+		E0356BFF2A6142DC005A937C /* ExtensionRx */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
+			package = E0356BFE2A6142DC005A937C /* XCRemoteSwiftPackageReference "extensions" */;
+			productName = ExtensionRx;
+		};
+		E0356C012A6142DC005A937C /* Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E0356BFE2A6142DC005A937C /* XCRemoteSwiftPackageReference "extensions" */;
 			productName = Extensions;
-		};
-		E07276A52A60EBA0006DF498 /* FoundationExt */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
-			productName = FoundationExt;
-		};
-		E07276A72A60EBA0006DF498 /* RxSwiftExtPlus */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
-			productName = RxSwiftExtPlus;
-		};
-		E07276A92A60EBA0006DF498 /* UIKitExt */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E07276A22A60EBA0006DF498 /* XCRemoteSwiftPackageReference "core" */;
-			productName = UIKitExt;
 		};
 		E0A518252A5F065D0065CC53 /* OHHTTPStubs */ = {
 			isa = XCSwiftPackageProductDependency;
