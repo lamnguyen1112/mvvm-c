@@ -16,6 +16,7 @@
 * Use cocoapods-keys to store secret key (alternative swiftsecretkeys https://github.com/MatheusMBispo/SwiftSecretKeys)
 * Use ObjectMapper to mapping json
 * Swiftlint
+* For beauty animation using Hero https://github.com/HeroTransitions/Hero
 
 --
 
@@ -38,3 +39,9 @@ using raywenderlich coding convension
 * https://github.com/tristanhimmelman/ObjectMapper
 * https://github.com/huri000/SwiftEntryKit
 * https://github.com/kukushi/SideMenu
+
+# Make template, to increase time develop
+https://www.kodeco.com/26582967-xcode-project-and-file-templates
+
+# For unit test using Quick Nimble
+
